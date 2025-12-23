@@ -1,152 +1,234 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="lt">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <!-- SEO -->
-  <title>Plaukimo pamokos Vilniuje vaikams ir suaugusiems | MokymasPlaukti.lt</title>
-  <meta name="description" content="Plaukimo pamokos Vilniuje vaikams ir suaugusiems. Individualios ir grupinės treniruotės. 19 metų patirtis. Registruokitės dabar!">
-  <meta name="robots" content="index, follow">
-  <link rel="canonical" href="https://mokymasplaukti.lt/">
+  <!-- ✅ SEO (основное) -->
+  <title>Plaukimo pamokos vaikams ir suaugusiems Vilniuje | MokymasPlaukti.lt</title>
+  <meta name="description" content="Plaukimo pamokos vaikams ir suaugusiems Vilniuje. Individualios ir grupinės treniruotės pradedantiesiems ir pažengusiems. 19 metų patirtis. Skambinkite: +370 611 62333." />
+  <meta name="robots" content="index,follow,max-image-preview:large" />
+  <link rel="canonical" href="https://mokymasplaukti.lt/" />
 
-  <!-- Open Graph -->
-  <meta property="og:title" content="Plaukimo pamokos Vilniuje | MokymasPlaukti.lt">
-  <meta property="og:description" content="Individualios ir grupinės plaukimo pamokos vaikams ir suaugusiems. 19 metų patirtis.">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://mokymasplaukti.lt/">
-  <meta property="og:image" content="https://mokymasplaukti.lt/logo.png">
+  <!-- ✅ Open Graph (Facebook / Messenger) -->
+  <meta property="og:title" content="Plaukimo pamokos Vilniuje | MokymasPlaukti.lt" />
+  <meta property="og:description" content="Individualios ir grupinės plaukimo treniruotės vaikams ir suaugusiems. 19 metų patirtis. +370 611 62333." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://mokymasplaukti.lt/" />
+  <meta property="og:image" content="https://mokymasplaukti.lt/logo.png" />
 
-  <!-- Geo -->
-  <meta name="geo.region" content="LT">
-  <meta name="geo.placename" content="Vilnius">
+  <!-- ✅ Geo -->
+  <meta name="geo.region" content="LT-VL" />
+  <meta name="geo.placename" content="Vilnius" />
 
-  <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <!-- Иконка -->
+  <link rel="icon" type="image/png" href="logo.png" />
 
-  <!-- Favicon -->
-  <link rel="icon" href="logo.png" type="image/png">
-
-  <!-- Structured Data -->
+  <!-- ✅ Schema.org (LocalBusiness) — важная часть SEO -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "SportsActivityLocation",
-    "name": "MokymasPlaukti.lt",
-    "url": "https://mokymasplaukti.lt",
+    "@type": "LocalBusiness",
+    "name": "Mokymas plaukti",
+    "url": "https://mokymasplaukti.lt/",
+    "image": "https://mokymasplaukti.lt/logo.png",
     "telephone": "+37061162333",
     "address": {
       "@type": "PostalAddress",
       "addressLocality": "Vilnius",
       "addressCountry": "LT"
-    }
+    },
+    "areaServed": "Vilnius",
+    "sameAs": [
+      "https://www.instagram.com/mokymas.plaukti/",
+      "https://www.facebook.com/share/1AN3i2aNR3/"
+    ]
   }
   </script>
 
   <style>
-    body {
-      margin: 0;
-      font-family: 'Inter', sans-serif;
-      background: #f8fafc;
-      color: #0f172a;
+    :root{
+      --blue:#1e56d6;
+      --bg:#f3f6fb;
+      --card:#ffffff;
+      --text:#0c1b33;
+      --muted:#4b5b78;
+      --line:#e6ebf5;
+      --radius:14px;
+      --shadow:0 12px 28px rgba(14, 35, 78, .12);
+      --w:1100px;
     }
-    header {
-      background: #0ea5e9;
-      color: white;
-      padding: 30px 20px;
-      display: flex;
-      align-items: center;
-      gap: 20px;
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      color:var(--text);
+      background:var(--bg);
     }
-    header img {
-      height: 80px;
+
+    /* Header */
+    .topbar{
+      background:var(--blue);
+      color:#fff;
+      padding:18px 16px;
     }
-    header h1 {
-      font-size: 28px;
-      margin: 0;
+    .container{max-width:var(--w);margin:0 auto;padding:0 16px}
+    .topbar .row{
+      display:flex;align-items:center;gap:14px;flex-wrap:wrap;
     }
-    section {
-      max-width: 1100px;
-      margin: 40px auto;
-      padding: 0 20px;
+    .logo{
+      width:46px;height:46px;border-radius:10px;
+      background:rgba(255,255,255,.16);
+      display:flex;align-items:center;justify-content:center;
+      overflow:hidden;
+      border:1px solid rgba(255,255,255,.22);
     }
-    h2 {
-      color: #0284c7;
-      margin-bottom: 10px;
+    .logo img{width:100%;height:100%;object-fit:cover}
+    h1{
+      margin:0;
+      font-size:24px;
+      font-weight:800;
+      letter-spacing:.2px;
     }
-    .cards {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
+
+    /* Main */
+    .main{padding:22px 0 36px}
+    h2{
+      margin:0 0 10px;
+      font-size:18px;
+      font-weight:800;
+      color:#0c2a66;
     }
-    .card {
-      background: white;
-      padding: 20px;
-      border-radius: 12px;
-      box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+    p{margin:0;color:var(--muted);line-height:1.55}
+    .card{
+      background:var(--card);
+      border:1px solid var(--line);
+      border-radius:var(--radius);
+      box-shadow:var(--shadow);
+      padding:18px;
     }
-    footer {
-      background: #020617;
-      color: white;
-      padding: 30px 20px;
-      text-align: center;
+    .grid{
+      display:grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap:14px;
+      margin-top:14px;
     }
-    a {
-      color: #38bdf8;
-      text-decoration: none;
+    @media (max-width: 900px){
+      .grid{grid-template-columns:1fr}
+    }
+
+    .service-title{font-weight:800;margin:0 0 6px}
+    .contacts{
+      margin-top:18px;
+      display:grid;
+      grid-template-columns: 1fr;
+      gap:10px;
+    }
+    .contact-line{
+      display:flex;gap:10px;align-items:center;flex-wrap:wrap;
+      color:var(--muted);
+    }
+    .contact-line b{color:var(--text)}
+    a{color:inherit}
+    .btns{
+      margin-top:14px;
+      display:flex;gap:10px;flex-wrap:wrap;
+    }
+    .btn{
+      display:inline-flex;align-items:center;justify-content:center;
+      padding:10px 14px;
+      border-radius:12px;
+      border:1px solid var(--line);
+      background:#fff;
+      text-decoration:none;
+      font-weight:800;
+    }
+    .btn.primary{
+      background:var(--blue);
+      border-color:rgba(255,255,255,.0);
+      color:#fff;
+    }
+
+    /* маленький SEO-текст внизу (без спама) */
+    .seo{
+      margin-top:18px;
+      font-size:13px;
+      color:#6a7a98;
     }
   </style>
 </head>
 
 <body>
-
-<header>
-  <img src="logo.png" alt="Mokymas Plaukti logotipas">
-  <h1>Plaukimo pamokos vaikams ir suaugusiems Vilniuje</h1>
-</header>
-
-<section>
-  <h2>Profesionalios plaukimo pamokos</h2>
-  <p>
-    MokymasPlaukti.lt siūlo profesionalias plaukimo pamokas vaikams ir suaugusiems Vilniuje.
-    Vykdomos individualios ir grupinės treniruotės pradedantiesiems ir pažengusiems.
-    19 metų patirtis padeda pasiekti greitus ir saugius rezultatus.
-  </p>
-</section>
-
-<section>
-  <h2>Mūsų treniruotės</h2>
-  <div class="cards">
-    <div class="card">
-      <h3>Individualios pamokos</h3>
-      <p>Asmeninis dėmesys, greitas progresas, lankstus grafikas.</p>
-    </div>
-    <div class="card">
-      <h3>Grupinės treniruotės</h3>
-      <p>Motyvacija, draugiška aplinka, efektyvus mokymasis.</p>
-    </div>
-    <div class="card">
-      <h3>Vaikams ir suaugusiems</h3>
-      <p>Nuo visiškų pradedančiųjų iki pažengusių.</p>
+  <!-- HEADER -->
+  <div class="topbar">
+    <div class="container">
+      <div class="row">
+        <div class="logo">
+          <!-- если нет logo.png — поставь файл рядом с index.html -->
+          <img src="logo.png" alt="Mokymas plaukti logo">
+        </div>
+        <h1>Plaukimo pamokos vaikams ir suaugusiems Vilniuje</h1>
+      </div>
     </div>
   </div>
-</section>
 
-<section>
-  <h2>Kontaktai</h2>
-  <p>
-    📞 Telefonas: <a href="tel:+37061162333">+370 611 62333</a><br>
-    📍 Miestas: Vilnius<br>
-    📸 Instagram: <a href="https://www.instagram.com/mokymas.plaukti" target="_blank">@mokymas.plaukti</a>
-  </p>
-</section>
+  <!-- CONTENT -->
+  <div class="main">
+    <div class="container">
 
-<footer>
-  <p>© 2025 MokymasPlaukti.lt – Plaukimo pamokos Vilniuje</p>
-</footer>
+      <div class="card">
+        <h2>Profesionalios plaukimo pamokos</h2>
+        <p>
+          MokymasPlaukti.lt siūlo profesionalias plaukimo pamokas vaikams ir suaugusiems Vilniuje.
+          Vykdomos individualios ir grupinės treniruotės pradedantiesiems ir pažengusiems.
+          19 metų patirtis padeda pasiekti greitus ir saugius rezultatus.
+        </p>
 
+        <div class="btns">
+          <a class="btn primary" href="tel:+37061162333">📞 Skambinti: +370 611 62333</a>
+          <a class="btn" href="https://www.instagram.com/mokymas.plaukti/" target="_blank" rel="noopener">Instagram</a>
+          <a class="btn" href="https://www.facebook.com/share/1AN3i2aNR3/" target="_blank" rel="noopener">Facebook</a>
+        </div>
+      </div>
+
+      <div style="height:14px"></div>
+
+      <div class="card">
+        <h2>Mūsų treniruotės</h2>
+
+        <div class="grid">
+          <div class="card" style="box-shadow:none">
+            <div class="service-title">Individualios pamokos</div>
+            <p>Asmeninis dėmesys, greitas progresas, lankstus grafikas.</p>
+          </div>
+
+          <div class="card" style="box-shadow:none">
+            <div class="service-title">Grupinės treniruotės</div>
+            <p>Motyvacija, draugiška aplinka, efektyvus mokymasis.</p>
+          </div>
+
+          <div class="card" style="box-shadow:none">
+            <div class="service-title">Vaikams ir suaugusiems</div>
+            <p>Nuo visiškų pradedančiųjų iki pažengusių.</p>
+          </div>
+        </div>
+
+        <div class="contacts">
+          <h2 style="margin-top:16px">Kontaktai</h2>
+
+          <div class="contact-line">📞 <b>Telefonas:</b> <a href="tel:+37061162333">+370 611 62333</a></div>
+          <div class="contact-line">📍 <b>Miestas:</b> Vilnius</div>
+          <div class="contact-line">📷 <b>Instagram:</b> <a href="https://www.instagram.com/mokymas.plaukti/" target="_blank" rel="noopener">@mokymas.plaukti</a></div>
+
+          <div class="seo">
+            Raktiniai žodžiai: plaukimo pamokos Vilniuje, mokymas plaukti vaikams, plaukimas suaugusiems, plaukimo treneris Vilnius.
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
 </body>
 </html>
+
 
