@@ -4,30 +4,31 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
 
-  <!-- ✅ SEO -->
   <title>Plaukimo pamokos vaikams ir suaugusiems Vilniuje | Mokymas plaukti</title>
-  <meta name="description" content="Plaukimo pamokos vaikams ir suaugusiems Lietuvoje (Vilniuje). Individualios ir grupinės treniruotės. 19 metų patirtis. Skambinkite +370 611 62333." />
+  <meta name="description" content="Plaukimo pamokos vaikams ir suaugusiems Vilniuje. Individualios ir grupinės treniruotės. 19 metų patirtis. Skambinkite +370 611 62333." />
   <meta name="robots" content="index,follow,max-image-preview:large" />
   <link rel="canonical" href="https://mokymasplaukti.lt/" />
   <meta name="theme-color" content="#071425" />
 
-  <!-- ✅ Open Graph (Facebook / Messenger) -->
-  <meta property="og:title" content="Mokymas plaukti — plaukimo pamokos Lietuvoje" />
+  <!-- hreflang -->
+  <link rel="alternate" hreflang="lt" href="https://mokymasplaukti.lt/" />
+  <link rel="alternate" hreflang="ru" href="https://mokymasplaukti.lt/ru.html" />
+  <link rel="alternate" hreflang="en" href="https://mokymasplaukti.lt/en.html" />
+  <link rel="alternate" hreflang="x-default" href="https://mokymasplaukti.lt/" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Mokymas plaukti — plaukimo pamokos Vilniuje" />
   <meta property="og:description" content="Plaukimo pamokos vaikams ir suaugusiems. Individualiai ir grupėse. 19 metų patirtis." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://mokymasplaukti.lt/" />
   <meta property="og:image" content="https://mokymasplaukti.lt/logo.png" />
   <meta property="og:locale" content="lt_LT" />
 
-  <!-- ✅ Twitter Card -->
+  <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Plaukimo pamokos vaikams ir suaugusiems | Mokymas plaukti" />
+  <meta name="twitter:title" content="Plaukimo pamokos Vilniuje | Mokymas plaukti" />
   <meta name="twitter:description" content="Individualios ir grupinės plaukimo treniruotės. 19 metų patirtis. +370 611 62333." />
   <meta name="twitter:image" content="https://mokymasplaukti.lt/logo.png" />
-
-  <!-- Geo -->
-  <meta name="geo.region" content="LT" />
-  <meta name="geo.placename" content="Lietuva" />
 
   <link rel="icon" type="image/png" href="logo.png" />
 
@@ -36,7 +37,9 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800;900&display=swap" rel="stylesheet">
 
-  <!-- ✅ Structured Data (лучше для Google) -->
+  <link rel="stylesheet" href="assets/styles.css" />
+
+  <!-- Structured Data -->
   <script type="application/ld+json">
   {
     "@context":"https://schema.org",
@@ -46,314 +49,14 @@
     "image":"https://mokymasplaukti.lt/logo.png",
     "logo":"https://mokymasplaukti.lt/logo.png",
     "telephone":"+37061162333",
-    "areaServed":["Lietuva","Vilnius"],
-    "address":{
-      "@type":"PostalAddress",
-      "addressCountry":"LT",
-      "addressLocality":"Vilnius"
-    },
+    "areaServed":["Vilnius","Lietuva"],
+    "address":{"@type":"PostalAddress","addressCountry":"LT","addressLocality":"Vilnius"},
     "sameAs":[
       "https://www.instagram.com/mokymas.plaukti?igsh=MXFnb2s4ZDl0bms3OA==",
       "https://www.facebook.com/share/1AN3i2aNR3/"
     ]
   }
   </script>
-
-  <style>
-    :root{
-      --brand:#1e6fd9;
-      --brand2:#6fd3ff;
-
-      --bg:#071425;
-      --card:#0d2240;
-      --text:#eef5ff;
-      --muted:#b8cdf2;
-      --line:rgba(184,205,242,.18);
-
-      --shadow:0 16px 40px rgba(0,0,0,.45);
-      --radius:18px;
-
-      --font:"Inter", system-ui, -apple-system, Segoe UI, Roboto, Arial;
-    }
-    *{box-sizing:border-box}
-    body{
-      margin:0;
-      font-family:var(--font);
-      color:var(--text);
-      background:
-        radial-gradient(1000px 520px at 20% 5%, rgba(30,111,217,.28), transparent 60%),
-        radial-gradient(900px 500px at 95% 20%, rgba(111,211,255,.18), transparent 60%),
-        var(--bg);
-    }
-    a{color:inherit}
-    .wrap{max-width:1120px;margin:0 auto;padding:16px 16px 48px;}
-
-    .header{
-      position:sticky;
-      top:0;
-      z-index:50;
-      margin-top:10px;
-      border:1px solid var(--line);
-      border-radius:22px;
-      background: linear-gradient(135deg, rgba(30,111,217,.22), rgba(111,211,255,.10));
-      box-shadow: var(--shadow);
-      overflow:hidden;
-      backdrop-filter: blur(10px);
-    }
-    .header-inner{
-      display:flex;
-      align-items:center;
-      justify-content:space-between;
-      gap:14px;
-      padding:14px 14px 10px;
-    }
-    .brand{
-      display:flex;
-      align-items:center;
-      gap:14px;
-      text-decoration:none;
-      color:var(--text);
-      min-width:360px;
-    }
-    .logo-frame{
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      padding:10px 12px;
-      border-radius:18px;
-      background: rgba(255,255,255,.92);
-      border:1px solid rgba(255,255,255,.25);
-      box-shadow: 0 18px 34px rgba(0,0,0,.28);
-    }
-    .logo{height:108px;width:auto;display:block;}
-    .brand-copy{display:flex; flex-direction:column; gap:6px;}
-    .brand-title{font-weight:900;font-size:20px;letter-spacing:.2px;line-height:1.05;}
-    .brand-tag{color:var(--muted);font-weight:700;font-size:13px;max-width:58ch;}
-
-    .header-cta{
-      display:flex;
-      align-items:center;
-      gap:10px;
-      flex-wrap:wrap;
-      justify-content:flex-end;
-    }
-    .cta{
-      display:inline-flex;
-      align-items:center;
-      justify-content:center;
-      padding:11px 14px;
-      border-radius:14px;
-      font-weight:900;
-      text-decoration:none;
-      border:1px solid var(--line);
-      user-select:none;
-      white-space:nowrap;
-    }
-    .cta-primary{
-      background: linear-gradient(135deg, rgba(30,111,217,.95), rgba(111,211,255,.75));
-      color:#fff;
-      box-shadow: 0 12px 26px rgba(30,111,217,.25);
-      min-width:138px;
-    }
-    .cta-ghost{background: rgba(255,255,255,.06);color:var(--text);}
-
-    .lang{
-      display:flex;
-      gap:8px;
-      padding:6px;
-      border-radius:16px;
-      border:1px solid var(--line);
-      background: rgba(255,255,255,.05);
-    }
-    .lang button{
-      border:0;
-      cursor:pointer;
-      padding:8px 10px;
-      border-radius:12px;
-      background:transparent;
-      color:var(--muted);
-      font-weight:900;
-      font-family:var(--font);
-    }
-    .lang button.active{
-      background: linear-gradient(135deg, rgba(30,111,217,.95), rgba(111,211,255,.75));
-      color:#fff;
-    }
-
-    .header-strip{
-      display:flex;
-      align-items:center;
-      justify-content:space-between;
-      gap:12px;
-      padding:10px 14px 12px;
-      border-top: 1px solid var(--line);
-      background: rgba(0,0,0,.12);
-    }
-    .strip-left{display:flex; flex-wrap:wrap; gap:8px;}
-    .pill{
-      padding:8px 10px;
-      border-radius:999px;
-      border:1px solid var(--line);
-      background: rgba(255,255,255,.05);
-      color: var(--muted);
-      font-weight:900;
-      font-size:12px;
-    }
-    .strip-right{color: rgba(238,245,255,.78);font-weight:800;font-size:12px;white-space:nowrap;}
-
-    .wave{
-      margin:16px 0 16px;
-      border-radius:18px;
-      overflow:hidden;
-      border:1px solid var(--line);
-      background: rgba(255,255,255,.03);
-      box-shadow: var(--shadow);
-    }
-    .wave svg{display:block;width:140%;height:56px;transform:translateX(-10%);}
-    .wave .w1{fill:rgba(111,211,255,.32)}
-    .wave .w2{fill:rgba(30,111,217,.22)}
-
-    .hero{
-      display:grid;
-      grid-template-columns: 1.15fr .85fr;
-      gap:16px;
-      align-items:stretch;
-      margin-top:6px;
-    }
-    @media (max-width: 940px){
-      .header-inner{flex-direction:column; align-items:stretch;}
-      .brand{min-width:0}
-      .header-cta{justify-content:flex-start}
-      .strip-right{display:none}
-      .logo{height:92px;}
-      .hero{grid-template-columns:1fr;}
-    }
-    @media (max-width: 520px){
-      .logo{height:84px;}
-      .brand-title{font-size:18px;}
-      .brand-tag{font-size:12px;}
-    }
-
-    .card{
-      border-radius:var(--radius);
-      border:1px solid var(--line);
-      background: linear-gradient(180deg, rgba(30,111,217,.12), rgba(13,34,64,.88));
-      box-shadow: var(--shadow);
-      overflow:hidden;
-    }
-    .left{padding:24px;}
-    .kicker{
-      display:inline-flex;
-      align-items:center;
-      gap:10px;
-      padding:8px 12px;
-      border-radius:999px;
-      border:1px solid var(--line);
-      background: rgba(255,255,255,.04);
-      color:var(--muted);
-      font-weight:900;
-    }
-    .dot{
-      width:8px;height:8px;border-radius:999px;
-      background: var(--brand2);
-      box-shadow: 0 0 18px rgba(111,211,255,.6);
-    }
-    h1{
-      margin:14px 0 10px;
-      font-size: clamp(28px, 4vw, 46px);
-      line-height:1.10;
-      letter-spacing:-.35px;
-      font-weight:900;
-    }
-    h2{margin:16px 0 8px;font-size:18px;font-weight:900;}
-    .sub{
-      margin:0 0 16px;
-      color:var(--muted);
-      font-size: clamp(15px, 2vw, 18px);
-      max-width: 65ch;
-      font-weight:650;
-    }
-    .badges{display:flex;flex-wrap:wrap;gap:10px;margin:14px 0 6px;}
-    .badge{
-      padding:10px 12px;
-      border-radius:14px;
-      border:1px solid var(--line);
-      background: rgba(255,255,255,.04);
-      color:var(--muted);
-      font-weight:900;
-      font-size:13px;
-    }
-    .actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px;}
-    .btn{
-      display:inline-flex;
-      align-items:center;
-      justify-content:center;
-      gap:10px;
-      text-decoration:none;
-      padding:12px 14px;
-      border-radius:14px;
-      font-weight:950;
-      border:1px solid var(--line);
-      background: linear-gradient(135deg, rgba(30,111,217,.95), rgba(111,211,255,.75));
-      color:#fff;
-      min-width:150px;
-      box-shadow: 0 12px 26px rgba(30,111,217,.28);
-    }
-    .btn.secondary{background: rgba(255,255,255,.06);color:var(--text);box-shadow:none;}
-
-    .photo{
-      position:relative;
-      min-height:420px;
-      overflow:hidden;
-      border-bottom:1px solid var(--line);
-      background: rgba(255,255,255,.03);
-    }
-    .photo img{width:100%;height:100%;object-fit:cover;display:block;}
-    .photo::after{
-      content:"";
-      position:absolute;
-      inset:0;
-      background: linear-gradient(to bottom, rgba(0,0,0,.05), rgba(0,0,0,.26));
-    }
-    .caption{
-      position:absolute;
-      left:16px;
-      bottom:16px;
-      z-index:2;
-      font-weight:900;
-      text-shadow: 0 10px 20px rgba(0,0,0,.55);
-      font-size:18px;
-      line-height:1.15;
-    }
-    .caption .role{display:block;margin-top:6px;font-size:13px;font-weight:900;opacity:.95;}
-    .right{display:flex; flex-direction:column;}
-    .right-body{padding:18px 18px 20px;}
-    .right-body h2{margin:0 0 8px; font-size:18px; font-weight:900;}
-    .list{margin:10px 0 0; padding-left:18px; color:var(--muted); font-weight:750;}
-    .list li{margin:8px 0;}
-
-    .grid{
-      margin-top:16px;
-      display:grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap:12px;
-    }
-    @media (max-width: 920px){ .grid{grid-template-columns:1fr;} }
-    .grid .card{padding:18px;}
-    .grid h3{margin:0 0 8px; font-size:18px; font-weight:900;}
-    .muted{color:var(--muted); font-weight:750; line-height:1.55;}
-
-    .footer{
-      margin-top:16px;
-      padding:14px 16px;
-      border-radius:18px;
-      border:1px solid var(--line);
-      background: rgba(255,255,255,.03);
-      color: rgba(238,245,255,.72);
-      font-size:13px;
-      font-weight:650;
-    }
-  </style>
 </head>
 
 <body>
@@ -361,36 +64,36 @@
 
     <header class="header">
       <div class="header-inner">
-        <a class="brand" href="#">
+        <a class="brand" href="/">
           <span class="logo-frame">
             <img src="logo.png" class="logo" alt="Mokymas plaukti">
           </span>
           <div class="brand-copy">
-            <div class="brand-title" id="brandTitle">Mokymas plaukti</div>
-            <div class="brand-tag" id="brandTag">Individualios ir grupinės plaukimo treniruotės vaikams ir suaugusiems</div>
+            <div class="brand-title">Mokymas plaukti</div>
+            <div class="brand-tag">Individualios ir grupinės plaukimo treniruotės vaikams ir suaugusiems</div>
           </div>
         </a>
 
         <div class="header-cta">
-          <a class="cta cta-primary" href="tel:+37061162333" id="ctaCall">Skambinti</a>
+          <a class="cta cta-primary" href="tel:+37061162333">Skambinti</a>
           <a class="cta cta-ghost" href="https://www.instagram.com/mokymas.plaukti?igsh=MXFnb2s4ZDl0bms3OA==" target="_blank" rel="noopener noreferrer">Instagram</a>
           <a class="cta cta-ghost" href="https://www.facebook.com/share/1AN3i2aNR3/" target="_blank" rel="noopener noreferrer">Facebook</a>
 
-          <div class="lang" aria-label="Language switcher">
-            <button id="lt" onclick="setLang('lt')">LT</button>
-            <button id="en" onclick="setLang('en')">EN</button>
-            <button id="ru" onclick="setLang('ru')">RU</button>
-          </div>
+          <nav class="lang" aria-label="Language switcher">
+            <a class="active" href="/">LT</a>
+            <a href="en.html">EN</a>
+            <a href="ru.html">RU</a>
+          </nav>
         </div>
       </div>
 
-      <div class="header-strip" aria-hidden="true">
+      <div class="header-strip">
         <div class="strip-left">
-          <span class="pill" id="pill1">19 metų patirtis</span>
-          <span class="pill" id="pill2">Individualiai + grupėse</span>
-          <span class="pill" id="pill3">Pagal susitarimą</span>
+          <span class="pill">19 metų patirtis</span>
+          <span class="pill">Individualiai + grupėse</span>
+          <span class="pill">Vilnius (pagal susitarimą)</span>
         </div>
-        <div class="strip-right" id="pillNote">Atsakau greitai • Saugiai • Aiškiai</div>
+        <div class="strip-right">Atsakau greitai • Saugiai • Aiškiai</div>
       </div>
     </header>
 
@@ -403,51 +106,47 @@
 
     <section class="hero">
       <div class="card left">
-        <div class="kicker"><span class="dot"></span><span id="kicker">Mokymas plaukti</span></div>
+        <div class="kicker"><span class="dot"></span><span>Mokymas plaukti</span></div>
 
-        <!-- ✅ ONE H1 -->
-        <h1 id="title">Plaukimo pamokos vaikams ir suaugusiems Lietuvoje</h1>
+        <h1>Plaukimo pamokos vaikams ir suaugusiems Vilniuje</h1>
 
-        <p class="sub" id="subtitle">
-          Individualios ir grupinės treniruotės: nuo pirmų žingsnių vandenyje iki taisyklingos technikos ir pasitikėjimo savimi.
+        <p class="sub">
+          Aiškios, saugios ir struktūruotos treniruotės: vandens pasitikėjimas, kvėpavimas, technika ir stabilus progresas.
         </p>
 
         <div class="badges">
-          <div class="badge" id="b1">⏱ 19 metų patirtis</div>
-          <div class="badge" id="b2">👥 Grupės ir mini-grupės</div>
-          <div class="badge" id="b3">🏊 Individualiai (1:1)</div>
+          <div class="badge">⏱ 19 metų patirtis</div>
+          <div class="badge">👥 Grupės ir mini-grupės</div>
+          <div class="badge">🏊 Individualiai (1:1)</div>
         </div>
 
         <div class="actions">
-          <a class="btn" href="tel:+37061162333">📞 <span id="callBtn">Skambinti</span></a>
+          <a class="btn" href="tel:+37061162333">📞 Skambinti</a>
           <a class="btn secondary" href="https://www.instagram.com/mokymas.plaukti?igsh=MXFnb2s4ZDl0bms3OA==" target="_blank" rel="noopener noreferrer">📸 Instagram</a>
           <a class="btn secondary" href="https://www.facebook.com/share/1AN3i2aNR3/" target="_blank" rel="noopener noreferrer">📘 Facebook</a>
         </div>
 
-        <p class="sub" style="margin-top:14px" id="ctaHint">
+        <p class="sub" style="margin-top:14px">
           Paskambinkite arba parašykite — greitai atsakysiu ir pasiūlysiu tinkamiausią formatą (individualiai ar grupėje).
         </p>
 
-        <!-- ✅ SEO TEXT (видимый, но дизайн не меняет) -->
-        <section id="seoBlock">
-          <h2 id="seoH2_1">Plaukimo pamokos vaikams ir suaugusiems</h2>
-          <p class="muted" id="seoP1">
-            Mokymas plaukti – tai individualios ir grupinės plaukimo treniruotės vaikams ir suaugusiems Lietuvoje.
-            Padedu pradedantiesiems įgyti pasitikėjimą vandenyje, o pažengusiems – pagerinti techniką, kvėpavimą ir ištvermę.
-            Treniruotėse daug dėmesio skiriu saugumui, taisyklingam kvėpavimui, kūno padėčiai vandenyje ir efektyviems judesiams.
+        <section>
+          <h2>Plaukimo pamokos Vilniuje</h2>
+          <p class="muted">
+            Mokymas plaukti – tai pamokos vaikams ir suaugusiems, pradedantiesiems ir pažengusiems.
+            Fokusas: saugumas, kvėpavimas, kūno padėtis vandenyje ir efektyvi technika.
           </p>
 
-          <h2 id="seoH2_2">Individualios ir grupinės treniruotės</h2>
-          <p class="muted" id="seoP2">
-            Galimi formatai: individualios pamokos (1:1), mini grupės ir grupinės treniruotės.
-            Individualus formatas tinka greitesniam progresui, baimės vandens įveikimui ir konkrečiam tikslui.
-            Grupėse kuriama motyvacija, o užduotys pritaikomos pagal amžių ir pasirengimo lygį.
+          <h2>Individualios ir grupinės treniruotės</h2>
+          <p class="muted">
+            Galimi formatai: 1:1, mini-grupės ir grupės. Individualiai – greitesniam progresui ir tikslui,
+            grupėse – daugiau motyvacijos ir nuosekli programa pagal lygį.
           </p>
 
-          <h2 id="seoH2_3">Kur vyksta pamokos</h2>
-          <p class="muted" id="seoP3">
-            Plaukimo pamokos galimos Vilniuje (pagal susitarimą), taip pat galima aptarti treniruočių organizavimą ir kituose miestuose.
-            Tikslas – kad plauktumėte saugiai, užtikrintai ir efektyviai.
+          <h2>Kaip matuojame progresą</h2>
+          <p class="muted">
+            Vertiname techniką, kvėpavimą, kūno padėtį, ritmą, ištvermę ir užtikrintumą vandenyje.
+            Jokių “bauginančių” terminų — tik aiškūs kriterijai ir realūs rezultatai.
           </p>
         </section>
       </div>
@@ -456,16 +155,16 @@
         <div class="photo">
           <img src="ivan.jpg" alt="Ivanas – plaukimo treneris">
           <div class="caption">
-            <span id="photoName">Ivan</span>
-            <span class="role">🏊‍♂️ <span id="photoRole">Plaukimo treneris</span></span>
+            <span>Ivan</span>
+            <span class="role">🏊‍♂️ Plaukimo treneris</span>
           </div>
         </div>
         <div class="right-body">
-          <h2 id="aboutTitle">Apie trenerį</h2>
+          <h2>Apie trenerį</h2>
           <ul class="list">
-            <li id="about1">19 metų patirtis — ramus ir aiškus mokymas</li>
-            <li id="about2">Saugumas, kvėpavimas, technika ir pasitikėjimas vandenyje</li>
-            <li id="about3">Formatas: individualiai arba grupėje (pagal susitarimą)</li>
+            <li>Ramus ir aiškus mokymas</li>
+            <li>Saugumas, kvėpavimas, technika ir pasitikėjimas</li>
+            <li>Formatas: individualiai arba grupėje (pagal susitarimą)</li>
           </ul>
         </div>
       </aside>
@@ -473,195 +172,33 @@
 
     <section class="grid">
       <div class="card">
-        <h3 id="whoTitle">Kam skirta</h3>
-        <div class="muted" id="whoText">
-          Vaikams nuo pradžių, suaugusiems, pradedantiesiems, technikai, baimės vandens įveikimui.
+        <h3>Kam skirta</h3>
+        <div class="muted">
+          Vaikams nuo pradžių, suaugusiems, pradedantiesiems, technikai, pasitikėjimui vandenyje.
         </div>
       </div>
 
       <div class="card">
-        <h3 id="formatTitle">Formatai</h3>
-        <div class="muted" id="formatText">
-          Individualiai (1:1), mini-grupės ir grupės — parenku tinkamiausią pagal tikslą ir lygį.
+        <h3>Formatai</h3>
+        <div class="muted">
+          1:1, mini-grupės ir grupės — parenku tinkamiausią pagal tikslą ir lygį.
         </div>
       </div>
 
       <div class="card">
-        <h3 id="contactTitle">Kontaktas</h3>
+        <h3>Kontaktas</h3>
         <div class="muted">
           <div><b>Tel:</b> <a href="tel:+37061162333">+370 611 62333</a></div>
-          <div style="margin-top:8px" id="contactNote">Geriausia: paskambinti arba parašyti per Instagram/Facebook.</div>
+          <div style="margin-top:8px">Geriausia: paskambinti arba parašyti per Instagram/Facebook.</div>
         </div>
       </div>
     </section>
 
     <div class="footer">
-      <span id="footer">© <span id="year"></span> Mokymas plaukti</span>
+      © <span id="year"></span> Mokymas plaukti
     </div>
   </div>
 
-  <script>
-    const t = {
-      lt: {
-        brandTitle:"Mokymas plaukti",
-        brandTag:"Individualios ir grupinės plaukimo treniruotės vaikams ir suaugusiems",
-        ctaCall:"Skambinti",
-        pill1:"19 metų patirtis",
-        pill2:"Individualiai + grupėse",
-        pill3:"Pagal susitarimą",
-        pillNote:"Atsakau greitai • Saugiai • Aiškiai",
-
-        kicker:"Mokymas plaukti",
-        title:"Plaukimo pamokos vaikams ir suaugusiems Lietuvoje",
-        subtitle:"Individualios ir grupinės treniruotės: nuo pirmų žingsnių vandenyje iki taisyklingos technikos ir pasitikėjimo savimi.",
-        b1:"⏱ 19 metų patirtis",
-        b2:"👥 Grupės ir mini-grupės",
-        b3:"🏊 Individualiai (1:1)",
-        callBtn:"Skambinti",
-        ctaHint:"Paskambinkite arba parašykite — greitai atsakysiu ir pasiūlysiu tinkamiausią formatą (individualiai ar grupėje).",
-
-        photoName:"Ivan",
-        photoRole:"Plaukimo treneris",
-
-        aboutTitle:"Apie trenerį",
-        about1:"19 metų patirtis — ramus ir aiškus mokymas",
-        about2:"Saugumas, kvėpavimas, technika ir pasitikėjimas vandenyje",
-        about3:"Formatas: individualiai arba grupėje (pagal susitarimą)",
-
-        whoTitle:"Kam skirta",
-        whoText:"Vaikams nuo pradžių, suaugusiems, pradedantiesiems, technikai, baimės vandens įveikimui.",
-        formatTitle:"Formatai",
-        formatText:"Individualiai (1:1), mini-grupės ir grupės — parenku tinkamiausią pagal tikslą ir lygį.",
-        contactTitle:"Kontaktas",
-        contactNote:"Geriausia: paskambinti arba parašyti per Instagram/Facebook.",
-        footer:"© {year} Mokymas plaukti"
-      },
-
-      en: {
-        brandTitle:"Mokymas plaukti",
-        brandTag:"Private & group swimming training for kids and adults",
-        ctaCall:"Call",
-        pill1:"19 years of experience",
-        pill2:"1:1 + groups",
-        pill3:"By arrangement",
-        pillNote:"Fast reply • Safe • Clear",
-
-        kicker:"Swimming lessons",
-        title:"Swimming lessons for kids and adults in Lithuania",
-        subtitle:"Private and group training: from water confidence to solid technique and steady progress.",
-        b1:"⏱ 19 years of experience",
-        b2:"👥 Groups & mini-groups",
-        b3:"🏊 1:1 coaching",
-        callBtn:"Call",
-        ctaHint:"Call or message — I’ll reply quickly and suggest the best format (1:1 or group).",
-
-        photoName:"Ivan",
-        photoRole:"Swimming Coach",
-
-        aboutTitle:"About the coach",
-        about1:"19 years of experience — calm and clear coaching",
-        about2:"Safety, breathing, technique and water confidence",
-        about3:"Format: 1:1 or group (by arrangement)",
-
-        whoTitle:"Who it’s for",
-        whoText:"Kids from zero, adults learning to swim, beginners, technique improvement, overcoming fear of water.",
-        formatTitle:"Formats",
-        formatText:"1:1 coaching, mini-groups and groups — I suggest the best option based on your goal and level.",
-        contactTitle:"Contact",
-        contactNote:"Best: call or message via Instagram/Facebook.",
-        footer:"© {year} Mokymas plaukti"
-      },
-
-      ru: {
-        brandTitle:"Mokymas plaukti",
-        brandTag:"Индивидуальные и групповые тренировки по плаванию для детей и взрослых",
-        ctaCall:"Позвонить",
-        pill1:"19 лет опыта",
-        pill2:"Индивидуально + группы",
-        pill3:"По договорённости",
-        pillNote:"Быстро отвечаю • Безопасно • Понятно",
-
-        kicker:"Обучение плаванию",
-        title:"Уроки плавания для детей и взрослых в Литве",
-        subtitle:"Индивидуальные и групповые тренировки: уверенность в воде, техника и стабильный прогресс.",
-        b1:"⏱ 19 лет опыта",
-        b2:"👥 Группы и мини-группы",
-        b3:"🏊 Индивидуально (1:1)",
-        callBtn:"Позвонить",
-        ctaHint:"Позвоните или напишите — отвечу быстро и предложу лучший формат (индивидуально или в группе).",
-
-        photoName:"Иван",
-        photoRole:"Тренер по плаванию",
-
-        aboutTitle:"О тренере",
-        about1:"19 лет опыта — спокойно и понятно объясняю",
-        about2:"Безопасность, дыхание, техника и уверенность в воде",
-        about3:"Формат: индивидуально или в группе (по договорённости)",
-
-        whoTitle:"Кому подойдёт",
-        whoText:"Детям с нуля, взрослым, новичкам, улучшение техники, преодоление страха воды.",
-        formatTitle:"Форматы",
-        formatText:"Индивидуально (1:1), мини-группы и группы — подберу лучший вариант под цель и уровень.",
-        contactTitle:"Контакты",
-        contactNote:"Лучше всего: звонок или сообщение в Instagram/Facebook.",
-        footer:"© {year} Mokymas plaukti"
-      }
-    };
-
-    const year = new Date().getFullYear();
-    document.getElementById("year").textContent = year;
-
-    function setLang(l){
-      document.getElementById("brandTitle").textContent = t[l].brandTitle;
-      document.getElementById("brandTag").textContent = t[l].brandTag;
-      document.getElementById("ctaCall").textContent = t[l].ctaCall;
-
-      document.getElementById("pill1").textContent = t[l].pill1;
-      document.getElementById("pill2").textContent = t[l].pill2;
-      document.getElementById("pill3").textContent = t[l].pill3;
-      document.getElementById("pillNote").textContent = t[l].pillNote;
-
-      document.getElementById("kicker").textContent = t[l].kicker;
-      document.getElementById("title").textContent = t[l].title;
-      document.getElementById("subtitle").textContent = t[l].subtitle;
-
-      document.getElementById("b1").textContent = t[l].b1;
-      document.getElementById("b2").textContent = t[l].b2;
-      document.getElementById("b3").textContent = t[l].b3;
-
-      document.getElementById("callBtn").textContent = t[l].callBtn;
-      document.getElementById("ctaHint").textContent = t[l].ctaHint;
-
-      document.getElementById("photoName").textContent = t[l].photoName;
-      document.getElementById("photoRole").textContent = t[l].photoRole;
-
-      document.getElementById("aboutTitle").textContent = t[l].aboutTitle;
-      document.getElementById("about1").textContent = t[l].about1;
-      document.getElementById("about2").textContent = t[l].about2;
-      document.getElementById("about3").textContent = t[l].about3;
-
-      document.getElementById("whoTitle").textContent = t[l].whoTitle;
-      document.getElementById("whoText").textContent = t[l].whoText;
-
-      document.getElementById("formatTitle").textContent = t[l].formatTitle;
-      document.getElementById("formatText").textContent = t[l].formatText;
-
-      document.getElementById("contactTitle").textContent = t[l].contactTitle;
-      document.getElementById("contactNote").textContent = t[l].contactNote;
-
-      document.getElementById("footer").textContent = t[l].footer.replace("{year}", year);
-
-      document.querySelectorAll(".lang button").forEach(b=>b.classList.remove("active"));
-      document.getElementById(l).classList.add("active");
-
-      try{ localStorage.setItem("lang", l); }catch(e){}
-    }
-
-    let saved = "lt";
-    try{ saved = localStorage.getItem("lang") || "lt"; }catch(e){}
-    if(!t[saved]) saved = "lt";
-    setLang(saved);
-  </script>
+  <script src="assets/site.js"></script>
 </body>
 </html>
-
