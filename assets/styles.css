@@ -404,3 +404,31 @@ h2{margin:16px 0 8px;font-size:18px;font-weight:900;}
     box-shadow: none;
   }
 }
+/* ===== ПИЛЮЛИ: СДЕЛАТЬ КАК НАДПИСИ, А НЕ КНОПКИ ===== */
+
+.pill,
+.badge {
+  border: 1px solid rgba(184,205,242,.14);
+  background: rgba(255,255,255,.03);
+  color: rgba(238,245,255,.75);
+
+  font-weight: 700;
+  font-size: 12px;
+  padding: 7px 10px;
+  border-radius: 999px;
+
+  /* убираем ощущение кнопки */
+  cursor: default;
+  pointer-events: none;
+  user-select: text;
+  box-shadow: none;
+  transform: none;
+}
+
+/* отключаем hover-движение */
+.pill:hover,
+.badge:hover {
+  transform: none !important;
+  box-shadow: none !important;
+  background: rgba(255,255,255,.03) !important;
+}
