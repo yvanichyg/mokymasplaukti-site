@@ -1,182 +1,107 @@
-<!doctype html>
+
+     <!DOCTYPE html>
 <html lang="lt">
 <head>
-  <meta charset="utf-8" />
+  <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <title>Plaukimo pamokos suaugusiems Vilniuje | Mokymas plaukti</title>
-  <meta name="description" content="Plaukimo pamokos suaugusiems Vilniuje: nuo nulio iki technikos gerinimo. Individualiai (1:1) ir mini grupėse. Baseinas – pagal susitarimą. Registracija telefonu." />
+  <meta name="description" content="Plaukimo pamokos suaugusiems Vilniuje – nuo visiško pradedančiojo iki technikos tobulinimo. Individualios ir grupinės treniruotės." />
 
-  <link rel="canonical" href="https://mokymasplaukti.lt/suaugusiu-plaukimo-pamokos/" />
-  <meta name="theme-color" content="#0b2a4a" />
-
+  <!-- ВАЖНО: правильный путь к CSS -->
   <link rel="stylesheet" href="/assets/styles.css" />
-
-  <!-- Open Graph -->
-  <meta property="og:title" content="Plaukimo pamokos suaugusiems Vilniuje" />
-  <meta property="og:description" content="Nuo nulio iki technikos gerinimo. Individualiai (1:1) ir mini grupėse. Baseinas – pagal susitarimą." />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://mokymasplaukti.lt/suaugusiu-plaukimo-pamokos/" />
 </head>
 
 <body>
-  <!-- HEADER (kaip pagrindiniame) -->
-  <header class="topbar">
-    <div class="container topbar__inner">
-      <a class="brand" href="/">
-        <span class="brand__dot"></span>
-        <span class="brand__name">Mokymas plaukti</span>
-      </a>
 
-      <nav class="nav" aria-label="Pagrindinė navigacija">
-        <a href="/">Pagrindinis</a>
-        <a href="/#vaikams">Vaikams</a>
-        <a class="is-active" href="/suaugusiu-plaukimo-pamokos/">Suaugusiems</a>
-        <a href="/#kontaktai">Kontaktai</a>
-      </nav>
+<header class="topbar">
+  <div class="container topbar_inner">
+    <a class="brand" href="/">
+      <span class="brand_name">Mokymas plaukti</span>
+    </a>
 
-      <div class="topbar__actions">
-        <a class="btn btn--pill" href="/ru.html">RU</a>
-        <a class="btn btn--pill" href="/en.html">EN</a>
-        <a class="btn btn--primary" href="#registracija">Skambinti</a>
-      </div>
+    <nav class="nav">
+      <a href="/">Pagrindinis</a>
+      <a href="/vaikams">Vaikams</a>
+      <a href="/suaugusiu-plaukimo-pamokos/">Suaugusiems</a>
+      <a href="/kontaktai">Kontaktai</a>
+    </nav>
+
+    <a class="btn btn-primary" href="#registracija">Skambinti</a>
+  </div>
+</header>
+
+<main class="container">
+
+  <!-- HERO -->
+  <section class="hero">
+    <h1>Plaukimo pamokos suaugusiems Vilniuje</h1>
+    <p class="hero_text">
+      Pamokos skirtos tiems, kurie nori išmokti plaukti nuo nulio, pagerinti techniką,
+      sustiprinti pasitikėjimą savimi vandenyje arba įveikti vandens baimę.
+      Treniruotės pritaikomos pagal jūsų tikslus ir lygį.
+    </p>
+
+    <div class="hero_actions">
+      <a class="btn btn-primary" href="#registracija">Registracija</a>
+      <a class="btn btn-ghost" href="/vaikams">Pamokos vaikams</a>
     </div>
-  </header>
 
-  <main class="container">
-    <!-- HERO -->
-    <section class="hero">
-      <div class="hero__content">
-        <h1>Plaukimo pamokos suaugusiems Vilniuje</h1>
-        <p class="muted">
-          Pamokos skirtos tiems, kurie nori <strong>išmokti plaukti nuo nulio</strong>,
-          <strong>pagerinti techniką</strong>, sustiprinti pasitikėjimą savimi vandenyje
-          arba <strong>įveikti vandens baimę</strong>. Treniruočių planas pritaikomas pagal jūsų tikslus ir lygį.
-        </p>
+    <div class="badges">
+      <span class="badge">Vilnius</span>
+      <span class="badge">Individualiai (1:1)</span>
+      <span class="badge">Mini grupės</span>
+      <span class="badge">Baseinas – pagal susitarimą</span>
+    </div>
+  </section>
 
-        <div class="hero__actions">
-          <a class="btn btn--primary" href="#registracija">Registracija</a>
-          <a class="btn btn--ghost" href="/#vaikams">Pamokos vaikams</a>
-        </div>
+  <!-- CONTENT -->
+  <section class="grid">
 
-        <div class="badges" aria-label="Svarbiausia informacija">
-          <span class="badge">Vilnius</span>
-          <span class="badge">Individualiai (1:1)</span>
-          <span class="badge">Mini grupės</span>
-          <span class="badge">Baseinas – pagal susitarimą</span>
-        </div>
-      </div>
-    </section>
+    <article class="card">
+      <h2>Ką mokomės treniruotėse</h2>
+      <ul>
+        <li>Vandens pojūtis ir saugumas</li>
+        <li>Taisyklingas kvėpavimas ir koordinacija</li>
+        <li>Kūno padėtis vandenyje</li>
+        <li>Plaukimo technikos gerinimas (laisvas stilius, nugara ir kt.)</li>
+      </ul>
+    </article>
 
-    <!-- GRID -->
-    <section class="grid">
-      <article class="card">
-        <h2>Ką mokomės treniruotėse</h2>
-        <ul class="list">
-          <li>Vandens pojūtis ir saugumas</li>
-          <li>Taisyklingas kvėpavimas ir koordinacija</li>
-          <li>Kūno padėtis vandenyje</li>
-          <li>Plaukimo technikos gerinimas (laisvas stilius, nugara ir kt.)</li>
-          <li>Ištvermė ir efektyvus judėjimas vandenyje</li>
-        </ul>
-      </article>
+    <article class="card">
+      <h2>Kam tinka šios pamokos?</h2>
+      <ul>
+        <li>Visiškiems pradedantiesiems</li>
+        <li>Norintiems patobulinti techniką</li>
+        <li>Suaugusiems, turintiems vandens baimę</li>
+        <li>Norintiems treniruotis individualiu tempu</li>
+      </ul>
+    </article>
 
-      <article class="card">
-        <h2>Kam tinka šios pamokos?</h2>
-        <ul class="list">
-          <li>Visiškai pradedantiesiems</li>
-          <li>Norintiems patobulinti techniką</li>
-          <li>Suaugusiems, turintiems vandens baimę</li>
-          <li>Norintiems treniruočių individualiu tempu</li>
-          <li>Po pertraukos grįžtantiems į plaukimą</li>
-        </ul>
-      </article>
+    <article class="card">
+      <h2>Treniruočių formatai</h2>
+      <ul>
+        <li>Individualios pamokos (1:1)</li>
+        <li>Mini grupės / grupės</li>
+        <li>Baseinas – pagal susitarimą</li>
+      </ul>
+    </article>
 
-      <article class="card">
-        <h2>Treniruočių formatai</h2>
-        <ul class="list">
-          <li><strong>Individualios pamokos (1:1)</strong> – maksimalus dėmesys jums</li>
-          <li><strong>Mini grupės / grupės</strong> – motyvacija ir komandiškas ritmas</li>
-          <li><strong>Baseinas</strong> – <em>pagal susitarimą</em> (parenkame patogiausią variantą)</li>
-        </ul>
-      </article>
+  </section>
 
-      <article class="card">
-        <h2>Kaip vyksta pirmoji pamoka</h2>
-        <ol class="list">
-          <li>Trumpas pokalbis: tikslai, patirtis, sveikatos niuansai</li>
-          <li>Vandens saugumo ir kvėpavimo pagrindai</li>
-          <li>Praktika pagal jūsų lygį (nuo nulio arba technikos korekcijos)</li>
-          <li>Aiškus planas: ką darome toliau ir ką galite praktikuoti</li>
-        </ol>
-        <p class="muted" style="margin-top:10px;">
-          Jei turite baimę vandeniui – dirbame labai ramiai, žingsnis po žingsnio.
-        </p>
-      </article>
-    </section>
+  <!-- CONTACT -->
+  <section id="registracija" class="card contact">
+    <h2>Registracija ir kontaktai</h2>
+    <p>📍 Vilnius</p>
+    <p>📞 Tel.: <a href="tel:+37061162333">+370 611 62333</a></p>
+    <a class="btn btn-primary" href="tel:+37061162333">Skambinti dabar</a>
+  </section>
 
-    <!-- FAQ -->
-    <section class="card" style="margin-top:16px;">
-      <h2>Dažniausi klausimai</h2>
+</main>
 
-      <details class="faq" open>
-        <summary>Ar tinka, jei nemoku plaukti visai?</summary>
-        <p>Taip. Pradedame nuo saugumo, kvėpavimo ir bazinių įgūdžių, viską darome pagal jūsų tempą.</p>
-      </details>
+<footer class="footer">
+  <p>© 2025 Mokymas plaukti</p>
+</footer>
 
-      <details class="faq">
-        <summary>Kur vyksta treniruotės?</summary>
-        <p>Vilniuje. Baseinas parenkamas <strong>pagal susitarimą</strong>, kad jums būtų patogu pagal vietą ir laiką.</p>
-      </details>
-
-      <details class="faq">
-        <summary>Ar galima treniruotis mini grupėje?</summary>
-        <p>Taip. Jei norite – galime pasiūlyti mini grupės formatą (priklauso nuo jūsų lygio ir grafiko).</p>
-      </details>
-
-      <details class="faq">
-        <summary>Ką pasiimti į pamoką?</summary>
-        <p>Maudymosi aprangą, kepuraitę, akinius, rankšluostį. Jei reikia – patarsime, ką geriau pasirinkti.</p>
-      </details>
-    </section>
-
-    <!-- CTA / CONTACT -->
-    <section id="registracija" class="card" style="margin-top:16px;">
-      <h2>Registracija ir kontaktai</h2>
-      <p class="muted">
-        Parašykite arba paskambinkite – suderinsime laiką ir baseiną. <br />
-        <strong>Vilnius</strong>
-      </p>
-
-      <div class="contact">
-        <div class="contact__row">
-          <span aria-hidden="true">📞</span>
-          <a href="tel:+37061162333">Tel.: +370 611 62333</a>
-        </div>
-      </div>
-
-      <div style="margin-top:12px;">
-        <a class="btn btn--primary" href="tel:+37061162333">Skambinti dabar</a>
-      </div>
-    </section>
-
-    <footer class="footer">
-      <span>© 2025 Mokymas plaukti</span>
-    </footer>
-  </main>
-
-  <!-- JSON-LD -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    "name": "Mokymas plaukti",
-    "url": "https://mokymasplaukti.lt/",
-    "areaServed": "Vilnius, Lithuania",
-    "telephone": "+37061162333",
-    "serviceType": "Plaukimo pamokos suaugusiems",
-    "inLanguage": "lt"
-  }
-  </script>
 </body>
-</html>
+</html>   
