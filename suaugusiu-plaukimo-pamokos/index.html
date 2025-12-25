@@ -5,17 +5,34 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <title>Plaukimo pamokos suaugusiems Vilniuje | Mokymas plaukti</title>
-  <meta name="description" content="Plaukimo pamokos suaugusiems Vilniuje: nuo nulio, technikos gerinimas, baimės vandens įveikimas. Individualiai arba mini grupėse. Baseinas – pagal susitarimą." />
+  <meta name="description" content="Plaukimo pamokos suaugusiems Vilniuje: nuo nulio, technikos gerinimas, vandens baimės įveikimas. Individualiai (1:1) arba mini grupėse. Baseinas – pagal susitarimą." />
 
-  <!-- общий стиль сайта -->
+  <link rel="canonical" href="https://mokymasplaukti.lt/suaugusiu-plaukimo-pamokos/" />
+  <meta name="theme-color" content="#0b2a4a" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Plaukimo pamokos suaugusiems Vilniuje" />
+  <meta property="og:description" content="Nuo nulio, technikos gerinimas, vandens baimės įveikimas. Individualiai (1:1) arba mini grupėse. Baseinas – pagal susitarimą." />
+  <meta property="og:url" content="https://mokymasplaukti.lt/suaugusiu-plaukimo-pamokos/" />
+
   <link rel="stylesheet" href="/assets/styles.css" />
 
-  <!-- чтобы у GitHub Pages всегда подтягивался стиль -->
-  <meta name="theme-color" content="#0b2a4a" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Mokymas plaukti",
+    "url": "https://mokymasplaukti.lt/suaugusiu-plaukimo-pamokos/",
+    "areaServed": "Vilnius, Lithuania",
+    "telephone": "+37061162333",
+    "description": "Plaukimo pamokos suaugusiems Vilniuje: nuo nulio, technikos gerinimas, vandens baimės įveikimas. Individualiai arba mini grupėse.",
+    "image": "https://mokymasplaukti.lt/logo.png"
+  }
+  </script>
 </head>
 
 <body>
-  <!-- HEADER как на главной -->
+  <!-- HEADER (kaip stiliumi pagrindiniame) -->
   <header class="topbar">
     <div class="container topbar__inner">
       <a class="brand" href="/">
@@ -24,29 +41,34 @@
       </a>
 
       <nav class="nav">
-        <a href="/#vaikams">Vaikams</a>
-        <a href="/suaugusiu-plaukimo-pamokos/">Suaugusiems</a>
+        <a href="/">Pagrindinis</a>
+        <a href="/vaiku-plaukimo-pamokos/">Vaikams</a>
+        <a href="/suaugusiu-plaukimo-pamokos/" aria-current="page">Suaugusiems</a>
         <a href="/#kontaktai">Kontaktai</a>
       </nav>
 
-      <a class="btn btn--primary" href="#registracija">Skambinti / registruotis</a>
+      <div class="topbar__actions">
+        <a class="btn btn--ghost" href="/ru.html">RU</a>
+        <a class="btn btn--ghost" href="/en.html">EN</a>
+        <a class="btn btn--primary" href="tel:+37061162333">Skambinti</a>
+      </div>
     </div>
   </header>
 
-  <!-- HERO -->
   <main class="container">
+    <!-- HERO -->
     <section class="hero">
       <div class="hero__content">
         <h1>Plaukimo pamokos suaugusiems Vilniuje</h1>
         <p class="muted">
-          Pamokos suaugusiems tiems, kurie nori <strong>išmokti plaukti nuo nulio</strong>,
-          <strong>pagerinti techniką</strong>, sustiprinti pasitikėjimą savimi vandenyje
-          arba <strong>įveikti vandens baimę</strong>. Treniruotės pritaikomos pagal jūsų lygį ir tikslus.
+          Pamokos skirtos tiems, kurie nori <strong>išmokti plaukti nuo nulio</strong>,
+          <strong>pagerinti techniką</strong>, sustiprinti pasitikėjimą vandenyje arba
+          <strong>įveikti vandens baimę</strong>. Treniruotės pritaikomos pagal jūsų tikslus ir lygį.
         </p>
 
         <div class="hero__actions">
           <a class="btn btn--primary" href="#registracija">Registracija</a>
-          <a class="btn btn--ghost" href="/#vaikams">Pamokos vaikams</a>
+          <a class="btn btn--ghost" href="/vaiku-plaukimo-pamokos/">Pamokos vaikams</a>
         </div>
 
         <div class="badges">
@@ -58,7 +80,7 @@
       </div>
     </section>
 
-    <!-- CONTENT GRID как на главной -->
+    <!-- GRID (kaip pagrindiniame) -->
     <section class="grid">
       <article class="card">
         <h2>Ką mokomės treniruotėse</h2>
@@ -67,52 +89,77 @@
           <li>Taisyklingas kvėpavimas ir koordinacija</li>
           <li>Kūno padėtis vandenyje</li>
           <li>Plaukimo technikos gerinimas (laisvas stilius, nugara ir kt.)</li>
-        </ul>
-      </article>
-
-      <article class="card">
-        <h2>Kam tinka šios pamokos?</h2>
-        <ul class="list">
-          <li>Visiškai pradedantiesiems</li>
-          <li>Norintiems patobulinti techniką</li>
-          <li>Suaugusiems, turintiems vandens baimę</li>
-          <li>Norintiems individualaus tempo ir dėmesio</li>
+          <li>Ištvermė ir tempas pagal jūsų tikslus</li>
         </ul>
       </article>
 
       <article class="card">
         <h2>Treniruočių formatai</h2>
         <ul class="list">
-          <li>Individualios pamokos (1:1)</li>
-          <li>Mini grupės / grupės</li>
-          <li>Baseinas – pagal susitarimą</li>
+          <li><strong>Individualios pamokos (1:1)</strong> – maksimalus dėmesys ir greitesnė pažanga</li>
+          <li><strong>Mini grupės</strong> – patogu, jei norite mokytis su draugu ar šeimos nariu</li>
+          <li><strong>Baseinas</strong> – parenkamas <em>pagal susitarimą</em> (patogiausia vieta / laikas)</li>
         </ul>
-        <p class="muted" style="margin-top:10px">
-          Jei norite — parinksime formatą pagal tikslą, grafiką ir lygį.
+      </article>
+
+      <article class="card">
+        <h2>Kam tinka šios pamokos?</h2>
+        <ul class="list">
+          <li>Visiškai pradedantiesiems (nemoku / bijau vandens)</li>
+          <li>Norintiems patobulinti techniką ir kvėpavimą</li>
+          <li>Suaugusiems, turintiems vandens baimę</li>
+          <li>Norintiems treniruotis individualiu tempu</li>
+        </ul>
+        <p class="muted" style="margin-top:10px;">
+          Jei esate tėtis / mama ir norite treniruotis kartu su vaiku – parašykite, suderinsime tinkamą formatą.
         </p>
+      </article>
+
+      <article class="card">
+        <h2>Kaip vyksta pirmas užsiėmimas</h2>
+        <ul class="list">
+          <li>Trumpa įvertinimo dalis (jūsų lygis, tikslai)</li>
+          <li>Saugumo taisyklės ir kvėpavimo bazė</li>
+          <li>Pratimai pagal tikslą: nuo „0“ arba technikos korekcija</li>
+          <li>Rekomendacijos, ką daryti iki kitos treniruotės</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <h2>Dažniausi klausimai</h2>
+        <details style="margin-top:8px;">
+          <summary><strong>Ar galiu pradėti, jei nemoku plaukti visai?</strong></summary>
+          <p class="muted" style="margin-top:8px;">Taip. Pradedame nuo bazės: saugumo, kvėpavimo ir vandens pojūčio.</p>
+        </details>
+        <details style="margin-top:10px;">
+          <summary><strong>Kur vyksta pamokos?</strong></summary>
+          <p class="muted" style="margin-top:8px;">Vilniuje. Baseinas parenkamas pagal susitarimą – pagal vietą ir laiką.</p>
+        </details>
+        <details style="margin-top:10px;">
+          <summary><strong>Kiek pamokų reikia rezultatui?</strong></summary>
+          <p class="muted" style="margin-top:8px;">Priklauso nuo tikslo. Dažniausiai pokytis jaučiasi per 3–6 treniruotes, o tvirtas rezultatas – per kelias savaites.</p>
+        </details>
+      </article>
+
+      <article class="card" id="registracija">
+        <h2>Registracija ir kontaktai</h2>
+        <p class="muted">Parašykite ar paskambinkite – suderinsime laiką ir baseiną.</p>
+
+        <div class="list" style="margin-top:10px;">
+          <div>📍 <strong>Vilnius</strong></div>
+          <div>📞 Tel.: <a href="tel:+37061162333">+370 611 62333</a></div>
+        </div>
+
+        <div style="margin-top:14px;">
+          <a class="btn btn--primary" href="tel:+37061162333">Skambinti dabar</a>
+          <a class="btn btn--ghost" href="/#kontaktai" style="margin-left:8px;">Kontaktų forma</a>
+        </div>
       </article>
     </section>
 
-    <!-- CTA -->
-    <section id="registracija" class="card card--cta">
-      <h2>Registracija ir kontaktai</h2>
-      <p class="muted">Parašykite arba paskambinkite — suderinsime laiką ir baseiną.</p>
-
-      <div class="cta__row">
-        <div class="cta__info">
-          <div class="line"><strong>Miestas:</strong> Vilnius</div>
-          <div class="line"><strong>Tel.:</strong> <a href="tel:+37061162333">+370 611 62333</a></div>
-        </div>
-
-        <div class="cta__actions">
-          <a class="btn btn--primary" href="tel:+37061162333">Skambinti dabar</a>
-          <a class="btn btn--ghost" href="/#kontaktai">Atgal į kontaktus</a>
-        </div>
-      </div>
-    </section>
-
-    <footer class="footer">
-      © 2025 Mokymas plaukti
+    <footer class="footer" id="kontaktai">
+      <div>© 2025 Mokymas plaukti</div>
+      <div class="muted">Plaukimo pamokos Vilniuje • Vaikams ir suaugusiems • Baseinas – pagal susitarimą</div>
     </footer>
   </main>
 </body>
