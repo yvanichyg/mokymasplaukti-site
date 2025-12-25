@@ -306,19 +306,42 @@ h2{margin:16px 0 8px;font-size:18px;font-weight:900;}
   font-size:13px;
   font-weight:650;
 }
-.pill:hover,
-.badge:hover {
-  transform: translateY(-6px) scale(1.05);
-  background: linear-gradient(135deg,
-    rgba(30,111,217,.9),
-    rgba(111,211,255,.9)
-  );
-  color: #fff;
-  box-shadow: 0 20px 40px rgba(30,111,217,.45);
+/* ===== ANIMATIONS ===== */
+
+/* появление снизу */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
 }
 
-/* лёгкое дыхание */
-.pill {
-  animation: float 4s ease-in-out infinite;
+/* мягкое дыхание */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-4px);
+  }
 }
 
+/* pills + badges */
+.pill,
+.badge {
+  animation: fadeUp 0.8s ease-out both;
+  transition: all 0.3s ease;
+}
+
+/* задержки */
+.pill:nth-child(1) { animation-delay: 0.1s; }
+.pill:nth-child(2) { animation-delay: 0.2s; }
+.pill:nth-child(3) { animation-delay: 0.3s; }
+
+.badge:nth-child(1) { animation-delay: 0.4s; }
+.badge:nth-child(2) { animation-delay: 0.5s; }
+.badge:nth-child(3) { animation-delay: 0.6s; }
