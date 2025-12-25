@@ -345,3 +345,62 @@ h2{margin:16px 0 8px;font-size:18px;font-weight:900;}
 .badge:nth-child(1) { animation-delay: 0.4s; }
 .badge:nth-child(2) { animation-delay: 0.5s; }
 .badge:nth-child(3) { animation-delay: 0.6s; }
+/* ===== ANIMATIONS (ВАУ) ===== */
+
+/* Появление снизу */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(18px) scale(.98); }
+  to   { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+/* Лёгкое "дыхание" */
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50%      { transform: translateY(-4px); }
+}
+
+/* Базовое поведение */
+.pill, .badge {
+  transition: transform .25s ease, box-shadow .25s ease, background .25s ease, color .25s ease;
+  will-change: transform;
+}
+
+/* Появление (один раз при загрузке) */
+.pill, .badge {
+  animation: fadeUp .65s ease-out both;
+}
+
+/* Задержки по очереди */
+.strip-left .pill:nth-child(1) { animation-delay: .10s; }
+.strip-left .pill:nth-child(2) { animation-delay: .20s; }
+.strip-left .pill:nth-child(3) { animation-delay: .30s; }
+
+.badges .badge:nth-child(1) { animation-delay: .35s; }
+.badges .badge:nth-child(2) { animation-delay: .45s; }
+.badges .badge:nth-child(3) { animation-delay: .55s; }
+
+/* “Дыхание” только верхним pill (чтобы не бесило) */
+.strip-left .pill {
+  animation-name: fadeUp, float;
+  animation-duration: .65s, 4s;
+  animation-timing-function: ease-out, ease-in-out;
+  animation-fill-mode: both, both;
+  animation-iteration-count: 1, infinite;
+  animation-delay: inherit, 1.2s; /* сначала появление, потом дыхание */
+}
+
+/* Hover эффект */
+.pill:hover, .badge:hover {
+  transform: translateY(-6px) scale(1.04);
+  background: linear-gradient(135deg, rgba(30,111,217,.92), rgba(111,211,255,.85));
+  color: #fff;
+  box-shadow: 0 18px 40px rgba(30,111,217,.35);
+}
+
+/* На телефоне hover не нужен */
+@media (hover: none) {
+  .pill:hover, .badge:hover {
+    transform: none;
+    box-shadow: none;
+  }
+}
