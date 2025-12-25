@@ -1,89 +1,121 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="lt">
 <head>
-  <meta charset="UTF-8">
-  <title>Mokymas plaukti</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/assets/styles.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Plaukimo pamokos Vilniuje | Mokymas plaukti</title>
+  <meta name="description" content="Plaukimo pamokos Vilniuje: vaikams ir suaugusiems. Individualiai ir mini grupėse. Pagal susitarimą." />
+
+  <!-- общий стиль сайта -->
+  <link rel="stylesheet" href="/assets/styles.css" />
+
+  <!-- чтобы мобилка красиво показывала цвет -->
+  <meta name="theme-color" content="#0b2a4a" />
 </head>
 
-<body style="
-  margin:0;
-  font-family:Arial, sans-serif;
-  background:linear-gradient(180deg,#0b2d4a,#061a2b);
-  color:white;
-  text-align:center;
-">
+<body>
+  <!-- HEADER как на других страницах -->
+  <header class="topbar">
+    <div class="container topbar__inner">
+      <a class="brand" href="/">
+        <span class="brand__dot"></span>
+        <span class="brand__name">Mokymas plaukti</span>
+      </a>
 
-  <!-- HEADER -->
-  <header style="padding:30px 20px;">
-    <img src="/logo.png" alt="Mokymas plaukti" style="max-width:220px;">
+      <nav class="nav">
+        <a href="/" class="nav__link nav__link--active">Pagrindinis</a>
+        <a href="/vaiku-plaukimo-pamokos/" class="nav__link">Vaikams</a>
+        <a href="/suaugusiu-plaukimo-pamokos/" class="nav__link">Suaugusiems</a>
+        <a href="/kontaktai" class="nav__link">Kontaktai</a>
+      </nav>
+
+      <div class="topbar__actions">
+        <a class="btn btn--ghost" href="/ru.html">RU</a>
+        <a class="btn btn--ghost" href="/en.html">EN</a>
+        <a class="btn btn--primary" href="/kontaktai">Skambinti</a>
+      </div>
+    </div>
   </header>
 
-  <!-- MAIN -->
-  <main style="max-width:900px;margin:0 auto;padding:20px;">
+  <!-- HERO -->
+  <main class="container">
+    <section class="hero">
+      <div class="hero__content">
+        <div class="hero__logo">
+          <img src="/logo.png" alt="Mokymas plaukti" />
+        </div>
 
-    <h1 style="font-size:36px;margin-bottom:20px;">
-      Plaukimo pamokos vaikams ir suaugusiems Vilniuje
-    </h1>
+        <h1>Plaukimo pamokos vaikams ir suaugusiems Vilniuje</h1>
 
-    <p style="font-size:18px;line-height:1.6;opacity:0.9;">
-      Individualios ir grupinės plaukimo treniruotės vaikams ir suaugusiems.
-      Mokome nuo nulio, geriname techniką, padedame įveikti vandens baimę
-      ir jaustis užtikrintai vandenyje.
-    </p>
+        <p class="muted">
+          Individualios ir grupinės treniruotės vaikams (4–7, 7–12) ir suaugusiems.
+          Mokome nuo nulio, geriname techniką, padedame įveikti vandens baimę.
+          Baseinas – pagal susitarimą.
+        </p>
 
-    <!-- BUTTONS -->
-    <div style="margin-top:40px;display:flex;flex-direction:column;gap:16px;align-items:center;">
+        <div class="hero__actions">
+          <a class="btn btn--primary" href="/kontaktai">Skambinti / registruotis</a>
+          <a class="btn btn--ghost" href="/vaiku-plaukimo-pamokos/">Pamokos vaikams</a>
+          <a class="btn btn--ghost" href="/suaugusiu-plaukimo-pamokos/">Pamokos suaugusiems</a>
+        </div>
 
-      <a href="/suaugusiu-plaukimo-pamokos/"
-         style="
-           display:inline-block;
-           width:260px;
-           padding:16px;
-           background:#3aa9ff;
-           color:white;
-           text-decoration:none;
-           border-radius:14px;
-           font-weight:bold;
-           font-size:18px;
-         ">
-        Pamokos suaugusiems
-      </a>
+        <div class="badges">
+          <span class="badge">Vilnius</span>
+          <span class="badge">Individualiai (1:1)</span>
+          <span class="badge">Mini grupės</span>
+          <span class="badge">Baseinas – pagal susitarimą</span>
+        </div>
+      </div>
+    </section>
 
-      <a href="/vaiku-plaukimo-pamokos/"
-         style="
-           display:inline-block;
-           width:260px;
-           padding:16px;
-           background:#2f89d9;
-           color:white;
-           text-decoration:none;
-           border-radius:14px;
-           font-weight:bold;
-           font-size:18px;
-         ">
-        Pamokos vaikams
-      </a>
+    <!-- Карточки как на других страницах -->
+    <section class="grid">
+      <article class="card">
+        <h2>Ką mokomės treniruotėse</h2>
+        <ul class="list">
+          <li>Vandens pojūtis ir saugumas</li>
+          <li>Taisyklingas kvėpavimas ir koordinacija</li>
+          <li>Kūno padėtis vandenyje</li>
+          <li>Plaukimo technikos gerinimas (laisvas stilius, nugara ir kt.)</li>
+        </ul>
+      </article>
 
-      <a href="/kontaktai"
-         style="
-           display:inline-block;
-           width:260px;
-           padding:16px;
-           background:#1f6fb5;
-           color:white;
-           text-decoration:none;
-           border-radius:14px;
-           font-weight:bold;
-           font-size:18px;
-         ">
-        Skambinti / registruotis
-      </a>
+      <article class="card">
+        <h2>Kam tinka šios pamokos?</h2>
+        <ul class="list">
+          <li>Vaikams 4–7 ir 7–12</li>
+          <li>Pradedantiesiems ir norintiems patobulinti techniką</li>
+          <li>Suaugusiems, turintiems vandens baimę</li>
+          <li>Norintiems treniruotis individualiu tempu</li>
+        </ul>
+      </article>
 
-    </div>
+      <article class="card">
+        <h2>Treniruočių formatai</h2>
+        <ul class="list">
+          <li>Individualios pamokos (1:1)</li>
+          <li>Mini grupės / grupės</li>
+          <li>Baseinas – pagal susitarimą</li>
+        </ul>
+      </article>
+    </section>
 
+    <section class="card card--wide" id="kontaktai">
+      <h2>Registracija ir kontaktai</h2>
+      <p class="muted">Vilnius</p>
+      <p><b>Tel.:</b> <a href="tel:+37061162333">+370 611 62333</a></p>
+
+      <div style="margin-top:12px;">
+        <a class="btn btn--primary" href="tel:+37061162333">Skambinti dabar</a>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <small>© 2025 Mokymas plaukti</small>
+    </footer>
   </main>
 
+  <script src="/assets/site.js"></script>
 </body>
 </html>
