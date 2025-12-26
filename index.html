@@ -4,31 +4,19 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
 
+  <!-- SEO -->
   <title>Plaukimo pamokos vaikams ir suaugusiems Vilniuje | Mokymas plaukti</title>
-  <meta name="description" content="Plaukimo pamokos vaikams ir suaugusiems Vilniuje. Individualios ir grupinės treniruotės. 19 metų patirtis. Skambinkite +370 611 62333." />
+  <meta name="description" content="Plaukimo pamokos vaikams ir suaugusiems Vilniuje. Individualiai ir grupėse. 19 metų patirtis. Skambinkite +370 611 62333." />
   <meta name="robots" content="index,follow,max-image-preview:large" />
   <link rel="canonical" href="https://mokymasplaukti.lt/" />
   <meta name="theme-color" content="#071425" />
 
-  <!-- hreflang -->
-  <link rel="alternate" hreflang="lt" href="https://mokymasplaukti.lt/" />
-  <link rel="alternate" hreflang="ru" href="https://mokymasplaukti.lt/ru.html" />
-  <link rel="alternate" hreflang="en" href="https://mokymasplaukti.lt/en.html" />
-  <link rel="alternate" hreflang="x-default" href="https://mokymasplaukti.lt/" />
-
   <!-- Open Graph -->
-  <meta property="og:title" content="Mokymas plaukti — plaukimo pamokos Vilniuje" />
-  <meta property="og:description" content="Plaukimo pamokos vaikams ir suaugusiems. Individualiai ir grupėse. 19 metų patirtis." />
+  <meta property="og:title" content="Mokymas plaukti Vilniuje" />
+  <meta property="og:description" content="Plaukimo pamokos vaikams ir suaugusiems. Individualiai ir grupėse." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://mokymasplaukti.lt/" />
   <meta property="og:image" content="https://mokymasplaukti.lt/logo.png" />
-  <meta property="og:locale" content="lt_LT" />
-
-  <!-- Twitter -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Plaukimo pamokos Vilniuje | Mokymas plaukti" />
-  <meta name="twitter:description" content="Individualios ir grupinės plaukimo treniruotės. 19 metų patirtis. +370 611 62333." />
-  <meta name="twitter:image" content="https://mokymasplaukti.lt/logo.png" />
 
   <link rel="icon" type="image/png" href="logo.png" />
 
@@ -37,168 +25,159 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800;900&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="assets/styles.css" />
+  <style>
+    :root{
+      --brand:#1e6fd9;
+      --bg:#071425;
+      --card:#0d2240;
+      --text:#eef5ff;
+      --muted:#b8cdf2;
+      --line:rgba(184,205,242,.18);
+      --shadow:0 16px 40px rgba(0,0,0,.45);
+      --radius:18px;
+      --font:"Inter", system-ui, Arial;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family:var(--font);
+      color:var(--text);
+      background:
+        radial-gradient(1000px 520px at 20% 5%, rgba(30,111,217,.25), transparent 60%),
+        var(--bg);
+    }
+    a{text-decoration:none;color:inherit}
+    .wrap{max-width:1120px;margin:0 auto;padding:16px}
 
-  <!-- Structured Data -->
-  <script type="application/ld+json">
-  {
-    "@context":"https://schema.org",
-    "@type":"LocalBusiness",
-    "name":"Mokymas plaukti",
-    "url":"https://mokymasplaukti.lt/",
-    "image":"https://mokymasplaukti.lt/logo.png",
-    "logo":"https://mokymasplaukti.lt/logo.png",
-    "telephone":"+37061162333",
-    "areaServed":["Vilnius","Lietuva"],
-    "address":{"@type":"PostalAddress","addressCountry":"LT","addressLocality":"Vilnius"},
-    "sameAs":[
-      "https://www.instagram.com/mokymas.plaukti?igsh=MXFnb2s4ZDl0bms3OA==",
-      "https://www.facebook.com/share/1AN3i2aNR3/"
-    ]
-  }
-  </script>
+    header{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:16px;
+      padding:16px;
+      border-radius:20px;
+      background:rgba(255,255,255,.05);
+      border:1px solid var(--line);
+      box-shadow:var(--shadow);
+    }
+    .brand{
+      display:flex;
+      align-items:center;
+      gap:14px;
+    }
+    .brand img{height:80px}
+    .brand strong{font-size:20px;font-weight:900}
+    .brand span{font-size:13px;color:var(--muted);display:block}
+
+    .cta{
+      padding:12px 16px;
+      border-radius:14px;
+      background:linear-gradient(135deg,#1e6fd9,#6fd3ff);
+      font-weight:900;
+      color:#fff;
+    }
+
+    main{margin-top:24px}
+
+    .card{
+      background:linear-gradient(180deg, rgba(30,111,217,.12), rgba(13,34,64,.88));
+      border:1px solid var(--line);
+      border-radius:var(--radius);
+      box-shadow:var(--shadow);
+      padding:28px;
+    }
+
+    h1{
+      font-size:clamp(28px,4vw,44px);
+      margin:0 0 12px;
+      font-weight:900;
+    }
+    p.sub{
+      color:var(--muted);
+      font-size:18px;
+      max-width:70ch;
+    }
+
+    .actions{
+      margin-top:28px;
+      display:flex;
+      gap:16px;
+      flex-wrap:wrap;
+    }
+    .btn{
+      padding:16px 20px;
+      border-radius:16px;
+      font-weight:900;
+      border:1px solid var(--line);
+      background:rgba(255,255,255,.06);
+      min-width:260px;
+      text-align:center;
+    }
+    .btn:hover{background:rgba(255,255,255,.12)}
+
+    .primary{background:linear-gradient(135deg,#1e6fd9,#6fd3ff);color:#fff}
+
+    footer{
+      margin-top:32px;
+      text-align:center;
+      color:var(--muted);
+      font-size:13px;
+    }
+  </style>
 </head>
 
 <body>
   <div class="wrap">
 
-    <header class="header">
-      <div class="header-inner">
-        <a class="brand" href="/">
-          <span class="logo-frame">
-            <img src="logo.png" class="logo" alt="Mokymas plaukti">
-          </span>
-          <div class="brand-copy">
-            <div class="brand-title">Mokymas plaukti</div>
-            <div class="brand-tag">Individualios ir grupinės plaukimo treniruotės vaikams ir suaugusiems</div>
-          </div>
-        </a>
-
-        <div class="header-cta">
-          <a class="cta cta-primary" href="tel:+37061162333">Skambinti</a>
-          <a class="cta cta-ghost" href="https://www.instagram.com/mokymas.plaukti?igsh=MXFnb2s4ZDl0bms3OA==" target="_blank" rel="noopener noreferrer">Instagram</a>
-          <a class="cta cta-ghost" href="https://www.facebook.com/share/1AN3i2aNR3/" target="_blank" rel="noopener noreferrer">Facebook</a>
-
-          <nav class="lang" aria-label="Language switcher">
-            <a class="active" href="/">LT</a>
-            <a href="en.html">EN</a>
-            <a href="ru.html">RU</a>
-          </nav>
+    <!-- HEADER -->
+    <header>
+      <div class="brand">
+        <img src="logo.png" alt="Mokymas plaukti">
+        <div>
+          <strong>Mokymas plaukti</strong>
+          <span>Plaukimo pamokos Vilniuje</span>
         </div>
       </div>
-
-      <div class="header-strip">
-        <div class="strip-left">
-          <span class="pill">19 metų patirtis</span>
-          <span class="pill">Individualiai + grupėse</span>
-          <span class="pill">Vilnius (pagal susitarimą)</span>
-        </div>
-        <div class="strip-right">Atsakau greitai • Saugiai • Aiškiai</div>
-      </div>
+      <a class="cta" href="tel:+37061162333">Skambinti</a>
     </header>
 
-    <div class="wave" aria-hidden="true">
-      <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
-        <path class="w1" d="M0,64 C240,120 480,8 720,56 C960,104 1200,16 1440,64 L1440,120 L0,120 Z"></path>
-        <path class="w2" d="M0,76 C240,132 480,20 720,68 C960,116 1200,28 1440,76 L1440,120 L0,120 Z"></path>
-      </svg>
-    </div>
-
-    <section class="hero">
-      <div class="card left">
-        <div class="kicker"><span class="dot"></span><span>Mokymas plaukti</span></div>
-
+    <!-- MAIN -->
+    <main>
+      <section class="card">
         <h1>Plaukimo pamokos vaikams ir suaugusiems Vilniuje</h1>
-
         <p class="sub">
-          Aiškios, saugios ir struktūruotos treniruotės: vandens pasitikėjimas, kvėpavimas, technika ir stabilus progresas.
+          Individualios ir grupinės treniruotės. Nuo nulio iki technikos gerinimo.
+          19 metų patirtis. Pamokos pagal susitarimą.
         </p>
 
-        <div class="badges">
-          <div class="badge">⏱ 19 metų patirtis</div>
-          <div class="badge">👥 Grupės ir mini-grupės</div>
-          <div class="badge">🏊 Individualiai (1:1)</div>
-        </div>
-
+        <!-- 👇 ВОТ ОНИ — КНОПКИ -->
         <div class="actions">
-          <a class="btn" href="tel:+37061162333">📞 Skambinti</a>
-          <a class="btn secondary" href="https://www.instagram.com/mokymas.plaukti?igsh=MXFnb2s4ZDl0bms3OA==" target="_blank" rel="noopener noreferrer">📸 Instagram</a>
-          <a class="btn secondary" href="https://www.facebook.com/share/1AN3i2aNR3/" target="_blank" rel="noopener noreferrer">📘 Facebook</a>
+          <a class="btn primary" href="/vaiku-plaukimo-pamokos/">
+            👶 Plaukimo pamokos vaikams
+          </a>
+
+          <a class="btn primary" href="/suaugusiu-plaukimo-pamokos/">
+            🏊‍♂️ Plaukimo pamokos suaugusiems
+          </a>
+
+          <a class="btn" href="https://www.instagram.com/mokymas.plaukti" target="_blank">
+            📸 Instagram
+          </a>
+
+          <a class="btn" href="https://www.facebook.com/share/1AN3i2aNR3/" target="_blank">
+            📘 Facebook
+          </a>
         </div>
+      </section>
+    </main>
 
-        <p class="sub" style="margin-top:14px">
-          Paskambinkite arba parašykite — greitai atsakysiu ir pasiūlysiu tinkamiausią formatą (individualiai ar grupėje).
-        </p>
-
-        <section>
-          <h2>Plaukimo pamokos Vilniuje</h2>
-          <p class="muted">
-            Mokymas plaukti – tai pamokos vaikams ir suaugusiems, pradedantiesiems ir pažengusiems.
-            Fokusas: saugumas, kvėpavimas, kūno padėtis vandenyje ir efektyvi technika.
-          </p>
-
-          <h2>Individualios ir grupinės treniruotės</h2>
-          <p class="muted">
-            Galimi formatai: 1:1, mini-grupės ir grupės. Individualiai – greitesniam progresui ir tikslui,
-            grupėse – daugiau motyvacijos ir nuosekli programa pagal lygį.
-          </p>
-
-          <h2>Kaip matuojame progresą</h2>
-          <p class="muted">
-            Vertiname techniką, kvėpavimą, kūno padėtį, ritmą, ištvermę ir užtikrintumą vandenyje.
-            Jokių “bauginančių” terminų — tik aiškūs kriterijai ir realūs rezultatai.
-          </p>
-        </section>
-      </div>
-
-      <aside class="card right">
-        <div class="photo">
-          <img src="ivan.jpg" alt="Ivanas – plaukimo treneris">
-          <div class="caption">
-            <span>Ivan</span>
-            <span class="role">🏊‍♂️ Plaukimo treneris</span>
-          </div>
-        </div>
-        <div class="right-body">
-          <h2>Apie trenerį</h2>
-          <ul class="list">
-            <li>Ramus ir aiškus mokymas</li>
-            <li>Saugumas, kvėpavimas, technika ir pasitikėjimas</li>
-            <li>Formatas: individualiai arba grupėje (pagal susitarimą)</li>
-          </ul>
-        </div>
-      </aside>
-    </section>
-
-    <section class="grid">
-      <div class="card">
-        <h3>Kam skirta</h3>
-        <div class="muted">
-          Vaikams nuo pradžių, suaugusiems, pradedantiesiems, technikai, pasitikėjimui vandenyje.
-        </div>
-      </div>
-
-      <div class="card">
-        <h3>Formatai</h3>
-        <div class="muted">
-          1:1, mini-grupės ir grupės — parenku tinkamiausią pagal tikslą ir lygį.
-        </div>
-      </div>
-
-      <div class="card">
-        <h3>Kontaktas</h3>
-        <div class="muted">
-          <div><b>Tel:</b> <a href="tel:+37061162333">+370 611 62333</a></div>
-          <div style="margin-top:8px">Geriausia: paskambinti arba parašyti per Instagram/Facebook.</div>
-        </div>
-      </div>
-    </section>
-
-    <div class="footer">
-      © <span id="year"></span> Mokymas plaukti
-    </div>
+    <footer>
+      © <span id="year"></span> Mokymas plaukti • Vilnius
+    </footer>
   </div>
 
-  <script src="assets/site.js"></script>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
