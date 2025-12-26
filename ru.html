@@ -1,42 +1,34 @@
 <!doctype html>
-<html lang="lt">
+<html lang="ru">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
 
-  <!-- SEO -->
-  <title>Plaukimo pamokos Vilniuje vaikams ir suaugusiems | Mokymas plaukti</title>
-  <meta name="description" content="Individualios ir grupinės plaukimo pamokos vaikams ir suaugusiems Vilniuje. Nuo pirmų žingsnių vandenyje iki technikos gerinimo. 19 metų patirtis. +370 611 62333." />
+  <title>Уроки плавания в Вильнюсе для детей и взрослых | Mokymas plaukti</title>
+  <meta name="description" content="Индивидуальные и занятия в малых группах по плаванию в Вильнюсе для детей и взрослых. С нуля и улучшение техники. 19 лет опыта. +370 611 62333." />
   <meta name="robots" content="index,follow,max-image-preview:large" />
-  <link rel="canonical" href="https://mokymasplaukti.lt/" />
+  <link rel="canonical" href="https://mokymasplaukti.lt/ru.html" />
 
-  <!-- Hreflang -->
   <link rel="alternate" href="https://mokymasplaukti.lt/" hreflang="lt" />
   <link rel="alternate" href="https://mokymasplaukti.lt/en.html" hreflang="en" />
   <link rel="alternate" href="https://mokymasplaukti.lt/ru.html" hreflang="ru" />
   <link rel="alternate" href="https://mokymasplaukti.lt/" hreflang="x-default" />
 
-  <!-- Social -->
-  <meta property="og:title" content="Plaukimo pamokos Vilniuje | Mokymas plaukti" />
-  <meta property="og:description" content="Plaukimo pamokos vaikams ir suaugusiems. Individualiai ir mažose grupėse. 19 metų patirtis." />
+  <meta property="og:title" content="Уроки плавания в Вильнюсе | Mokymas plaukti" />
+  <meta property="og:description" content="Индивидуально и в малых группах. Для детей и взрослых. 19 лет опыта." />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://mokymasplaukti.lt/" />
+  <meta property="og:url" content="https://mokymasplaukti.lt/ru.html" />
   <meta property="og:image" content="https://mokymasplaukti.lt/logo.png" />
-  <meta property="og:locale" content="lt_LT" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Plaukimo pamokos Vilniuje | Mokymas plaukti" />
-  <meta name="twitter:description" content="Individualios ir grupinės plaukimo pamokos. 19 metų patirtis. +370 611 62333." />
   <meta name="twitter:image" content="https://mokymasplaukti.lt/logo.png" />
 
   <meta name="theme-color" content="#071425" />
   <link rel="icon" type="image/png" href="logo.png" />
 
-  <!-- Font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800;900&display=swap" rel="stylesheet">
 
-  <!-- Structured data: LocalBusiness + Services -->
   <script type="application/ld+json">
   {
     "@context":"https://schema.org",
@@ -51,315 +43,99 @@
     "sameAs":[
       "https://www.instagram.com/mokymas.plaukti?igsh=MXFnb2s4ZDl0bms3OA==",
       "https://www.facebook.com/share/1AN3i2aNR3/"
-    ],
-    "makesOffer":[
-      {"@type":"Offer","itemOffered":{"@type":"Service","name":"Plaukimo pamokos vaikams","areaServed":"Vilnius"}},
-      {"@type":"Offer","itemOffered":{"@type":"Service","name":"Plaukimo pamokos suaugusiems","areaServed":"Vilnius"}},
-      {"@type":"Offer","itemOffered":{"@type":"Service","name":"Individualios plaukimo treniruotės","areaServed":"Vilnius"}},
-      {"@type":"Offer","itemOffered":{"@type":"Service","name":"Grupinės plaukimo treniruotės (mažos grupės)","areaServed":"Vilnius"}}
     ]
   }
   </script>
 
   <style>
-    :root{
-      --brand:#1e6fd9;
-      --brand2:#6fd3ff;
-
-      --bg:#071425;
-      --card:#0d2240;
-      --text:#eef5ff;
-      --muted:#b8cdf2;
-      --line:rgba(184,205,242,.18);
-
-      --shadow:0 16px 40px rgba(0,0,0,.45);
-      --radius:18px;
-
-      --font:"Inter", system-ui, -apple-system, Segoe UI, Roboto, Arial;
-    }
+    /* same CSS as LT (kept identical to avoid layout differences) */
+    :root{--brand:#1e6fd9;--brand2:#6fd3ff;--bg:#071425;--card:#0d2240;--text:#eef5ff;--muted:#b8cdf2;--line:rgba(184,205,242,.18);--shadow:0 16px 40px rgba(0,0,0,.45);--radius:18px;--font:"Inter",system-ui,-apple-system,Segoe UI,Roboto,Arial}
     *{box-sizing:border-box}
-    body{
-      margin:0;
-      font-family:var(--font);
-      color:var(--text);
-      background:
-        radial-gradient(1000px 520px at 20% 5%, rgba(30,111,217,.28), transparent 60%),
-        radial-gradient(900px 500px at 95% 20%, rgba(111,211,255,.18), transparent 60%),
-        var(--bg);
-    }
-    a{color:inherit}
-    .wrap{max-width:1120px;margin:0 auto;padding:16px 16px 48px;}
-
-    .header{
-      position:sticky; top:0; z-index:50;
-      margin-top:10px;
-      border:1px solid var(--line);
-      border-radius:22px;
-      background: linear-gradient(135deg, rgba(30,111,217,.22), rgba(111,211,255,.10));
-      box-shadow: var(--shadow);
-      overflow:hidden;
-      backdrop-filter: blur(10px);
-    }
-    .header-inner{
-      display:flex; align-items:center; justify-content:space-between;
-      gap:14px; padding:14px 14px 10px;
-    }
-    .brand{
-      display:flex; align-items:center; gap:14px;
-      text-decoration:none; color:var(--text);
-      min-width:360px;
-    }
-    .logo-frame{
-      display:flex; align-items:center; justify-content:center;
-      padding:10px 12px;
-      border-radius:18px;
-      background: rgba(255,255,255,.92);
-      border:1px solid rgba(255,255,255,.25);
-      box-shadow: 0 18px 34px rgba(0,0,0,.28);
-    }
-    .logo{height:108px;width:auto;display:block;}
-    .brand-copy{display:flex; flex-direction:column; gap:6px;}
-    .brand-title{font-weight:900;font-size:20px;letter-spacing:.2px;line-height:1.05;}
-    .brand-tag{color:var(--muted);font-weight:700;font-size:13px;max-width:58ch;}
-
-    .header-cta{
-      display:flex; align-items:center; gap:10px;
-      flex-wrap:wrap; justify-content:flex-end;
-    }
-    .cta{
-      display:inline-flex; align-items:center; justify-content:center;
-      padding:11px 14px; border-radius:14px;
-      font-weight:900; text-decoration:none;
-      border:1px solid var(--line);
-      user-select:none; white-space:nowrap;
-      background: rgba(255,255,255,.06);
-      color: var(--text);
-    }
-    .cta-primary{
-      background: linear-gradient(135deg, rgba(30,111,217,.95), rgba(111,211,255,.75));
-      color:#fff; box-shadow: 0 12px 26px rgba(30,111,217,.25);
-      min-width:138px;
-    }
-
-    .lang{
-      display:flex; gap:8px; padding:6px;
-      border-radius:16px;
-      border:1px solid var(--line);
-      background: rgba(255,255,255,.05);
-    }
-    .lang a{
-      display:inline-flex;
-      padding:8px 10px;
-      border-radius:12px;
-      text-decoration:none;
-      color:var(--muted);
-      font-weight:900;
-    }
-    .lang a.active{
-      background: linear-gradient(135deg, rgba(30,111,217,.95), rgba(111,211,255,.75));
-      color:#fff;
-    }
-
-    .header-strip{
-      display:flex; align-items:center; justify-content:space-between;
-      gap:12px; padding:10px 14px 12px;
-      border-top: 1px solid var(--line);
-      background: rgba(0,0,0,.12);
-    }
-    .strip-left{display:flex; flex-wrap:wrap; gap:8px;}
-    .pill{
-      padding:8px 10px;
-      border-radius:999px;
-      border:1px solid var(--line);
-      background: rgba(255,255,255,.05);
-      color: var(--muted);
-      font-weight:900;
-      font-size:12px;
-    }
-
-    .wave{
-      margin:16px 0 16px;
-      border-radius:18px;
-      overflow:hidden;
-      border:1px solid var(--line);
-      background: rgba(255,255,255,.03);
-      box-shadow: var(--shadow);
-    }
-    .wave svg{display:block;width:140%;height:56px;transform:translateX(-10%);}
-    .wave .w1{fill:rgba(111,211,255,.32)}
-    .wave .w2{fill:rgba(30,111,217,.22)}
-
-    .hero{
-      display:grid;
-      grid-template-columns: 1.15fr .85fr;
-      gap:16px;
-      align-items:stretch;
-      margin-top:6px;
-    }
-    @media (max-width: 940px){
-      .header-inner{flex-direction:column; align-items:stretch;}
-      .brand{min-width:0}
-      .header-cta{justify-content:flex-start}
-      .logo{height:92px;}
-      .hero{grid-template-columns:1fr;}
-    }
-    @media (max-width: 520px){
-      .logo{height:84px;}
-      .brand-title{font-size:18px;}
-      .brand-tag{font-size:12px;}
-    }
-
-    .card{
-      border-radius:var(--radius);
-      border:1px solid var(--line);
-      background: linear-gradient(180deg, rgba(30,111,217,.12), rgba(13,34,64,.88));
-      box-shadow: var(--shadow);
-      overflow:hidden;
-    }
-    .left{padding:24px;}
-    .kicker{
-      display:inline-flex; align-items:center; gap:10px;
-      padding:8px 12px;
-      border-radius:999px;
-      border:1px solid var(--line);
-      background: rgba(255,255,255,.04);
-      color:var(--muted);
-      font-weight:900;
-    }
-    .dot{
-      width:8px;height:8px;border-radius:999px;
-      background: var(--brand2);
-      box-shadow: 0 0 18px rgba(111,211,255,.6);
-    }
-
-    h1{
-      margin:14px 0 10px;
-      font-size: clamp(28px, 4vw, 46px);
-      line-height:1.10;
-      letter-spacing:-.35px;
-      font-weight:900;
-    }
-    .sub{
-      margin:0 0 16px;
-      color:var(--muted);
-      font-size: clamp(15px, 2vw, 18px);
-      max-width: 65ch;
-      font-weight:650;
-      line-height:1.55;
-    }
-    .badges{display:flex;flex-wrap:wrap;gap:10px;margin:14px 0 6px;}
-    .badge{
-      padding:10px 12px;
-      border-radius:14px;
-      border:1px solid var(--line);
-      background: rgba(255,255,255,.04);
-      color:var(--muted);
-      font-weight:900;
-      font-size:13px;
-    }
-
-    .actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px;}
-    .btn{
-      display:inline-flex; align-items:center; justify-content:center; gap:10px;
-      text-decoration:none;
-      padding:12px 14px;
-      border-radius:14px;
-      font-weight:950;
-      border:1px solid var(--line);
-      background: linear-gradient(135deg, rgba(30,111,217,.95), rgba(111,211,255,.75));
-      color:#fff;
-      min-width:150px;
-      box-shadow: 0 12px 26px rgba(30,111,217,.28);
-    }
-    .btn.secondary{
-      background: rgba(255,255,255,.06);
-      color: var(--text);
-      box-shadow:none;
-    }
-
-    .photo{
-      position:relative;
-      min-height:420px;
-      overflow:hidden;
-      border-bottom:1px solid var(--line);
-      background: rgba(255,255,255,.03);
-    }
-    .photo img{width:100%;height:100%;object-fit:cover;display:block;}
-    .photo::after{
-      content:""; position:absolute; inset:0;
-      background: linear-gradient(to bottom, rgba(0,0,0,.05), rgba(0,0,0,.26));
-    }
-    .caption{
-      position:absolute; left:16px; bottom:16px; z-index:2;
-      font-weight:900;
-      text-shadow: 0 10px 20px rgba(0,0,0,.55);
-      font-size:18px; line-height:1.15;
-    }
-    .caption .role{display:block;margin-top:6px;font-size:13px;font-weight:900;opacity:.95;}
-    .right{display:flex; flex-direction:column;}
-    .right-body{padding:18px 18px 20px;}
-    .right-body h2{margin:0 0 8px; font-size:18px; font-weight:900;}
-    .list{margin:10px 0 0; padding-left:18px; color:var(--muted); font-weight:750; line-height:1.6;}
-    .list li{margin:8px 0;}
-
-    .grid{
-      margin-top:16px;
-      display:grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap:12px;
-    }
-    @media (max-width: 920px){ .grid{grid-template-columns:1fr;} }
-    .grid .card{padding:18px;}
-    .grid h3{margin:0 0 8px; font-size:18px; font-weight:900;}
-    .muted{color:var(--muted); font-weight:750; line-height:1.65;}
-
-    .footer{
-      margin-top:16px;
-      padding:14px 16px;
-      border-radius:18px;
-      border:1px solid var(--line);
-      background: rgba(255,255,255,.03);
-      color: rgba(238,245,255,.72);
-      font-size:13px;
-      font-weight:650;
-    }
-    .text-bottom{margin-top:14px; padding-top:10px; border-top:1px solid rgba(184,205,242,.12);}
+    body{margin:0;font-family:var(--font);color:var(--text);background:radial-gradient(1000px 520px at 20% 5%, rgba(30,111,217,.28), transparent 60%),radial-gradient(900px 500px at 95% 20%, rgba(111,211,255,.18), transparent 60%),var(--bg)}
+    a{color:inherit}.wrap{max-width:1120px;margin:0 auto;padding:16px 16px 48px}
+    .header{position:sticky;top:0;z-index:50;margin-top:10px;border:1px solid var(--line);border-radius:22px;background:linear-gradient(135deg, rgba(30,111,217,.22), rgba(111,211,255,.10));box-shadow:var(--shadow);overflow:hidden;backdrop-filter:blur(10px)}
+    .header-inner{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:14px 14px 10px}
+    .brand{display:flex;align-items:center;gap:14px;text-decoration:none;color:var(--text);min-width:360px}
+    .logo-frame{display:flex;align-items:center;justify-content:center;padding:10px 12px;border-radius:18px;background:rgba(255,255,255,.92);border:1px solid rgba(255,255,255,.25);box-shadow:0 18px 34px rgba(0,0,0,.28)}
+    .logo{height:108px;width:auto;display:block}
+    .brand-copy{display:flex;flex-direction:column;gap:6px}
+    .brand-title{font-weight:900;font-size:20px;letter-spacing:.2px;line-height:1.05}
+    .brand-tag{color:var(--muted);font-weight:700;font-size:13px;max-width:58ch}
+    .header-cta{display:flex;align-items:center;gap:10px;flex-wrap:wrap;justify-content:flex-end}
+    .cta{display:inline-flex;align-items:center;justify-content:center;padding:11px 14px;border-radius:14px;font-weight:900;text-decoration:none;border:1px solid var(--line);user-select:none;white-space:nowrap;background:rgba(255,255,255,.06);color:var(--text)}
+    .cta-primary{background:linear-gradient(135deg, rgba(30,111,217,.95), rgba(111,211,255,.75));color:#fff;box-shadow:0 12px 26px rgba(30,111,217,.25);min-width:138px}
+    .lang{display:flex;gap:8px;padding:6px;border-radius:16px;border:1px solid var(--line);background:rgba(255,255,255,.05)}
+    .lang a{display:inline-flex;padding:8px 10px;border-radius:12px;text-decoration:none;color:var(--muted);font-weight:900}
+    .lang a.active{background:linear-gradient(135deg, rgba(30,111,217,.95), rgba(111,211,255,.75));color:#fff}
+    .header-strip{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:10px 14px 12px;border-top:1px solid var(--line);background:rgba(0,0,0,.12)}
+    .strip-left{display:flex;flex-wrap:wrap;gap:8px}
+    .pill{padding:8px 10px;border-radius:999px;border:1px solid var(--line);background:rgba(255,255,255,.05);color:var(--muted);font-weight:900;font-size:12px}
+    .wave{margin:16px 0;border-radius:18px;overflow:hidden;border:1px solid var(--line);background:rgba(255,255,255,.03);box-shadow:var(--shadow)}
+    .wave svg{display:block;width:140%;height:56px;transform:translateX(-10%)}
+    .wave .w1{fill:rgba(111,211,255,.32)} .wave .w2{fill:rgba(30,111,217,.22)}
+    .hero{display:grid;grid-template-columns:1.15fr .85fr;gap:16px;align-items:stretch;margin-top:6px}
+    @media (max-width:940px){.header-inner{flex-direction:column;align-items:stretch}.brand{min-width:0}.header-cta{justify-content:flex-start}.logo{height:92px}.hero{grid-template-columns:1fr}}
+    @media (max-width:520px){.logo{height:84px}.brand-title{font-size:18px}.brand-tag{font-size:12px}}
+    .card{border-radius:var(--radius);border:1px solid var(--line);background:linear-gradient(180deg, rgba(30,111,217,.12), rgba(13,34,64,.88));box-shadow:var(--shadow);overflow:hidden}
+    .left{padding:24px}
+    .kicker{display:inline-flex;align-items:center;gap:10px;padding:8px 12px;border-radius:999px;border:1px solid var(--line);background:rgba(255,255,255,.04);color:var(--muted);font-weight:900}
+    .dot{width:8px;height:8px;border-radius:999px;background:var(--brand2);box-shadow:0 0 18px rgba(111,211,255,.6)}
+    h1{margin:14px 0 10px;font-size:clamp(28px,4vw,46px);line-height:1.10;letter-spacing:-.35px;font-weight:900}
+    .sub{margin:0 0 16px;color:var(--muted);font-size:clamp(15px,2vw,18px);max-width:65ch;font-weight:650;line-height:1.55}
+    .badges{display:flex;flex-wrap:wrap;gap:10px;margin:14px 0 6px}
+    .badge{padding:10px 12px;border-radius:14px;border:1px solid var(--line);background:rgba(255,255,255,.04);color:var(--muted);font-weight:900;font-size:13px}
+    .actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;text-decoration:none;padding:12px 14px;border-radius:14px;font-weight:950;border:1px solid var(--line);background:linear-gradient(135deg, rgba(30,111,217,.95), rgba(111,211,255,.75));color:#fff;min-width:150px;box-shadow:0 12px 26px rgba(30,111,217,.28)}
+    .btn.secondary{background:rgba(255,255,255,.06);color:var(--text);box-shadow:none}
+    .photo{position:relative;min-height:420px;overflow:hidden;border-bottom:1px solid var(--line);background:rgba(255,255,255,.03)}
+    .photo img{width:100%;height:100%;object-fit:cover;display:block}
+    .photo::after{content:"";position:absolute;inset:0;background:linear-gradient(to bottom, rgba(0,0,0,.05), rgba(0,0,0,.26))}
+    .caption{position:absolute;left:16px;bottom:16px;z-index:2;font-weight:900;text-shadow:0 10px 20px rgba(0,0,0,.55);font-size:18px;line-height:1.15}
+    .caption .role{display:block;margin-top:6px;font-size:13px;font-weight:900;opacity:.95}
+    .right{display:flex;flex-direction:column}
+    .right-body{padding:18px 18px 20px}
+    .right-body h2{margin:0 0 8px;font-size:18px;font-weight:900}
+    .list{margin:10px 0 0;padding-left:18px;color:var(--muted);font-weight:750;line-height:1.6}
+    .list li{margin:8px 0}
+    .grid{margin-top:16px;display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+    @media (max-width:920px){.grid{grid-template-columns:1fr}}
+    .grid .card{padding:18px}
+    .grid h3{margin:0 0 8px;font-size:18px;font-weight:900}
+    .muted{color:var(--muted);font-weight:750;line-height:1.65}
+    .footer{margin-top:16px;padding:14px 16px;border-radius:18px;border:1px solid var(--line);background:rgba(255,255,255,.03);color:rgba(238,245,255,.72);font-size:13px;font-weight:650}
+    .text-bottom{margin-top:14px;padding-top:10px;border-top:1px solid rgba(184,205,242,.12)}
   </style>
 </head>
-
 <body>
   <div class="wrap">
-
     <header class="header">
       <div class="header-inner">
-        <a class="brand" href="https://mokymasplaukti.lt/">
-          <span class="logo-frame">
-            <img src="logo.png" class="logo" alt="Mokymas plaukti logotipas">
-          </span>
+        <a class="brand" href="https://mokymasplaukti.lt/ru.html">
+          <span class="logo-frame"><img src="logo.png" class="logo" alt="Логотип Mokymas plaukti"></span>
           <div class="brand-copy">
             <div class="brand-title">Mokymas plaukti</div>
-            <div class="brand-tag">Individualios ir grupinės plaukimo treniruotės vaikams ir suaugusiems</div>
+            <div class="brand-tag">Уроки плавания в Вильнюсе: индивидуально и в малых группах</div>
           </div>
         </a>
 
         <div class="header-cta">
-          <a class="cta cta-primary" href="tel:+37061162333">Skambinti</a>
+          <a class="cta cta-primary" href="tel:+37061162333">Позвонить</a>
           <a class="cta" href="https://www.instagram.com/mokymas.plaukti?igsh=MXFnb2s4ZDl0bms3OA==" target="_blank" rel="noopener noreferrer">Instagram</a>
           <a class="cta" href="https://www.facebook.com/share/1AN3i2aNR3/" target="_blank" rel="noopener noreferrer">Facebook</a>
 
-          <nav class="lang" aria-label="Kalbos">
-            <a class="active" href="https://mokymasplaukti.lt/">LT</a>
+          <nav class="lang" aria-label="Язык">
+            <a href="https://mokymasplaukti.lt/">LT</a>
             <a href="https://mokymasplaukti.lt/en.html">EN</a>
-            <a href="https://mokymasplaukti.lt/ru.html">RU</a>
+            <a class="active" href="https://mokymasplaukti.lt/ru.html">RU</a>
           </nav>
         </div>
       </div>
 
       <div class="header-strip" aria-hidden="true">
         <div class="strip-left">
-          <span class="pill">19 metų patirtis</span>
-          <span class="pill">Individualiai + mažos grupės</span>
-          <span class="pill">Vilnius • pagal susitarimą</span>
+          <span class="pill">19 лет опыта</span>
+          <span class="pill">Индивидуально + малые группы</span>
+          <span class="pill">Вильнюс • по договорённости</span>
         </div>
       </div>
     </header>
@@ -374,86 +150,78 @@
     <section class="hero">
       <div class="card left">
         <div class="kicker"><span class="dot"></span><span>Vilnius</span></div>
-
-        <!-- ONE H1 -->
-        <h1>Plaukimo pamokos Vilniuje vaikams ir suaugusiems</h1>
+        <h1>Уроки плавания в Вильнюсе для детей и взрослых</h1>
 
         <p class="sub">
-          Plaukimo pamokos vyksta individualiai arba mažose grupėse. Dirbame su vaikais ir suaugusiais — nuo pirmų žingsnių vandenyje iki technikos gerinimo.
-          Baseinas ir laikas parenkami individualiai, pagal susitarimą Vilniuje.
+          Занятия проходят индивидуально или в малых группах. Работаю с детьми и взрослыми — от первых шагов в воде до улучшения техники.
+          Бассейн и время подбираются индивидуально, по договорённости в Вильнюсе.
         </p>
 
         <div class="badges">
-          <div class="badge">⏱ 19 metų patirtis</div>
-          <div class="badge">👥 Mažos grupės</div>
-          <div class="badge">🏊 Individualiai (1:1)</div>
+          <div class="badge">⏱ 19 лет опыта</div>
+          <div class="badge">👥 Малые группы</div>
+          <div class="badge">🏊 Индивидуально (1:1)</div>
         </div>
 
         <div class="actions">
-          <a class="btn" href="tel:+37061162333">📞 Skambinti</a>
-          <a class="btn secondary" href="https://mokymasplaukti.lt/vaiku-plaukimo-pamokos/">👧 Vaikams</a>
-          <a class="btn secondary" href="https://mokymasplaukti.lt/suaugusiu-plaukimo-pamokos/">🧑 Suaugusiems</a>
+          <a class="btn" href="tel:+37061162333">📞 Позвонить</a>
+          <a class="btn secondary" href="https://mokymasplaukti.lt/vaiku-plaukimo-pamokos/">👧 Детям</a>
+          <a class="btn secondary" href="https://mokymasplaukti.lt/suaugusiu-plaukimo-pamokos/">🧑 Взрослым</a>
         </div>
 
         <div class="text-bottom">
           <p class="sub" style="margin:0">
-            Jei norite greito atsakymo — patogiausia paskambinti arba parašyti per Instagram / Facebook.
+            Для быстрого ответа — удобнее всего позвонить или написать в Instagram / Facebook.
           </p>
         </div>
       </div>
 
       <aside class="card right">
         <div class="photo">
-          <img src="ivan.jpg" alt="Ivanas – plaukimo treneris">
+          <img src="ivan.jpg" alt="Иван — тренер по плаванию">
           <div class="caption">
             Ivan
-            <span class="role">🏊‍♂️ Plaukimo treneris</span>
+            <span class="role">🏊‍♂️ Тренер по плаванию</span>
           </div>
         </div>
         <div class="right-body">
-          <h2>Apie trenerį</h2>
+          <h2>О тренере</h2>
           <ul class="list">
-            <li>Ramus ir aiškus mokymas: nuo pradmenų iki technikos</li>
-            <li>Daug dėmesio skiriu saugumui, kvėpavimui ir kūno padėčiai</li>
-            <li>Formatai: individualiai arba mažose grupėse (pagal susitarimą)</li>
+            <li>Спокойно и понятно: с нуля до техники</li>
+            <li>Безопасность, дыхание, положение тела, эффективные движения</li>
+            <li>Форматы: индивидуально или малые группы (по договорённости)</li>
           </ul>
         </div>
       </aside>
     </section>
 
-    <section class="grid" aria-label="Kontaktai ir informacija">
+    <section class="grid">
       <div class="card">
-        <h3>Vaikams</h3>
+        <h3>Детям</h3>
         <div class="muted">
-          Amžiaus grupės 4–7 ir 7–12. Nuo vandens baimės įveikimo iki tvirtų plaukimo pagrindų.
-          <div style="margin-top:10px"><a href="https://mokymasplaukti.lt/vaiku-plaukimo-pamokos/">Atidaryti puslapį →</a></div>
+          Возраст 4–7 и 7–12. Уверенность в воде и сильные базовые навыки.
+          <div style="margin-top:10px"><a href="https://mokymasplaukti.lt/vaiku-plaukimo-pamokos/">Открыть страницу →</a></div>
         </div>
       </div>
-
       <div class="card">
-        <h3>Suaugusiems</h3>
+        <h3>Взрослым</h3>
         <div class="muted">
-          Nuo nulio, technikos gerinimas arba abu kartu. Aiškus planas, progresas ir pasitikėjimas vandenyje.
-          <div style="margin-top:10px"><a href="https://mokymasplaukti.lt/suaugusiu-plaukimo-pamokos/">Atidaryti puslapį →</a></div>
+          С нуля, улучшение техники или всё вместе. Понятный план и стабильный прогресс.
+          <div style="margin-top:10px"><a href="https://mokymasplaukti.lt/suaugusiu-plaukimo-pamokos/">Открыть страницу →</a></div>
         </div>
       </div>
-
       <div class="card">
-        <h3>Kontaktai</h3>
+        <h3>Контакты</h3>
         <div class="muted">
-          <div><b>Tel:</b> <a href="tel:+37061162333">+370 611 62333</a></div>
-          <div style="margin-top:8px"><b>Vilnius:</b> pagal susitarimą</div>
+          <div><b>Тел:</b> <a href="tel:+37061162333">+370 611 62333</a></div>
+          <div style="margin-top:8px"><b>Вильнюс:</b> по договорённости</div>
         </div>
       </div>
     </section>
 
-    <div class="footer">
-      © <span id="year"></span> Mokymas plaukti
-    </div>
+    <div class="footer">© <span id="year"></span> Mokymas plaukti</div>
   </div>
 
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
+  <script>document.getElementById("year").textContent=new Date().getFullYear();</script>
 </body>
 </html>
