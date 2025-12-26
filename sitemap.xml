@@ -1,24 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
+  <!-- Главная -->
   <url>
     <loc>https://mokymasplaukti.lt/</loc>
-    <lastmod>2025-12-25</lastmod>
+    <lastmod>2025-01-01</lastmod>
+    <priority>1.00</priority>
   </url>
 
-  <url>
-    <loc>https://mokymasplaukti.lt/ru.html</loc>
-    <lastmod>2025-12-25</lastmod>
-  </url>
-
-  <url>
-    <loc>https://mokymasplaukti.lt/en.html</loc>
-    <lastmod>2025-12-25</lastmod>
-  </url>
-
+  <!-- Vaikams -->
   <url>
     <loc>https://mokymasplaukti.lt/vaiku-plaukimo-pamokos/</loc>
-    <lastmod>2025-12-25</lastmod>
+    <lastmod>2025-01-01</lastmod>
+    <priority>0.90</priority>
+  </url>
+
+  <!-- Vaikams EN -->
+  <url>
+    <loc>https://mokymasplaukti.lt/vaiku-plaukimo-pamokos/en.html</loc>
+    <lastmod>2025-01-01</lastmod>
+    <priority>0.80</priority>
+  </url>
+
+  <!-- Vaikams RU -->
+  <url>
+    <loc>https://mokymasplaukti.lt/vaiku-plaukimo-pamokos/ru.html</loc>
+    <lastmod>2025-01-01</lastmod>
+    <priority>0.80</priority>
+  </url>
+
+  <!-- Suaugusiems -->
+  <url>
+    <loc>https://mokymasplaukti.lt/suaugusiu-plaukimo-pamokos/</loc>
+    <lastmod>2025-01-01</lastmod>
+    <priority>0.90</priority>
+  </url>
+
+  <!-- Suaugusiems EN -->
+  <url>
+    <loc>https://mokymasplaukti.lt/suaugusiu-plaukimo-pamokos/en.html</loc>
+    <lastmod>2025-01-01</lastmod>
+    <priority>0.80</priority>
+  </url>
+
+  <!-- Suaugusiems RU -->
+  <url>
+    <loc>https://mokymasplaukti.lt/suaugusiu-plaukimo-pamokos/ru.html</loc>
+    <lastmod>2025-01-01</lastmod>
+    <priority>0.80</priority>
   </url>
 
 </urlset>
