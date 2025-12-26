@@ -4,180 +4,100 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
 
-  <!-- SEO -->
-  <title>Plaukimo pamokos vaikams ir suaugusiems Vilniuje | Mokymas plaukti</title>
-  <meta name="description" content="Plaukimo pamokos vaikams ir suaugusiems Vilniuje. Individualiai ir grupėse. 19 metų patirtis. Skambinkite +370 611 62333." />
+  <title>Mokymas plaukti — Plaukimo pamokos Vilniuje</title>
+  <meta name="description" content="Plaukimo pamokos vaikams ir suaugusiems Vilniuje. Individualiai ir grupėse. Nuo nulio iki technikos gerinimo. 19 metų patirtis." />
   <meta name="robots" content="index,follow,max-image-preview:large" />
   <link rel="canonical" href="https://mokymasplaukti.lt/" />
   <meta name="theme-color" content="#071425" />
 
+  <!-- Hreflang -->
+  <link rel="alternate" href="https://mokymasplaukti.lt/" hreflang="lt" />
+  <link rel="alternate" href="https://mokymasplaukti.lt/en.html" hreflang="en" />
+  <link rel="alternate" href="https://mokymasplaukti.lt/ru.html" hreflang="ru" />
+  <link rel="alternate" href="https://mokymasplaukti.lt/" hreflang="x-default" />
+
   <!-- Open Graph -->
-  <meta property="og:title" content="Mokymas plaukti Vilniuje" />
-  <meta property="og:description" content="Plaukimo pamokos vaikams ir suaugusiems. Individualiai ir grupėse." />
+  <meta property="og:title" content="Mokymas plaukti — Plaukimo pamokos Vilniuje" />
+  <meta property="og:description" content="Pamokos vaikams ir suaugusiems. Individualiai ir grupėse. 19 metų patirtis." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://mokymasplaukti.lt/" />
   <meta property="og:image" content="https://mokymasplaukti.lt/logo.png" />
+  <meta property="og:locale" content="lt_LT" />
 
-  <link rel="icon" type="image/png" href="logo.png" />
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Mokymas plaukti — Plaukimo pamokos Vilniuje" />
+  <meta name="twitter:description" content="Pamokos vaikams ir suaugusiems. Individualiai ir grupėse. 19 metų patirtis." />
+  <meta name="twitter:image" content="https://mokymasplaukti.lt/logo.png" />
 
-  <!-- Font -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800;900&display=swap" rel="stylesheet">
-
-  <style>
-    :root{
-      --brand:#1e6fd9;
-      --bg:#071425;
-      --card:#0d2240;
-      --text:#eef5ff;
-      --muted:#b8cdf2;
-      --line:rgba(184,205,242,.18);
-      --shadow:0 16px 40px rgba(0,0,0,.45);
-      --radius:18px;
-      --font:"Inter", system-ui, Arial;
-    }
-    *{box-sizing:border-box}
-    body{
-      margin:0;
-      font-family:var(--font);
-      color:var(--text);
-      background:
-        radial-gradient(1000px 520px at 20% 5%, rgba(30,111,217,.25), transparent 60%),
-        var(--bg);
-    }
-    a{text-decoration:none;color:inherit}
-    .wrap{max-width:1120px;margin:0 auto;padding:16px}
-
-    header{
-      display:flex;
-      align-items:center;
-      justify-content:space-between;
-      gap:16px;
-      padding:16px;
-      border-radius:20px;
-      background:rgba(255,255,255,.05);
-      border:1px solid var(--line);
-      box-shadow:var(--shadow);
-    }
-    .brand{
-      display:flex;
-      align-items:center;
-      gap:14px;
-    }
-    .brand img{height:80px}
-    .brand strong{font-size:20px;font-weight:900}
-    .brand span{font-size:13px;color:var(--muted);display:block}
-
-    .cta{
-      padding:12px 16px;
-      border-radius:14px;
-      background:linear-gradient(135deg,#1e6fd9,#6fd3ff);
-      font-weight:900;
-      color:#fff;
-    }
-
-    main{margin-top:24px}
-
-    .card{
-      background:linear-gradient(180deg, rgba(30,111,217,.12), rgba(13,34,64,.88));
-      border:1px solid var(--line);
-      border-radius:var(--radius);
-      box-shadow:var(--shadow);
-      padding:28px;
-    }
-
-    h1{
-      font-size:clamp(28px,4vw,44px);
-      margin:0 0 12px;
-      font-weight:900;
-    }
-    p.sub{
-      color:var(--muted);
-      font-size:18px;
-      max-width:70ch;
-    }
-
-    .actions{
-      margin-top:28px;
-      display:flex;
-      gap:16px;
-      flex-wrap:wrap;
-    }
-    .btn{
-      padding:16px 20px;
-      border-radius:16px;
-      font-weight:900;
-      border:1px solid var(--line);
-      background:rgba(255,255,255,.06);
-      min-width:260px;
-      text-align:center;
-    }
-    .btn:hover{background:rgba(255,255,255,.12)}
-
-    .primary{background:linear-gradient(135deg,#1e6fd9,#6fd3ff);color:#fff}
-
-    footer{
-      margin-top:32px;
-      text-align:center;
-      color:var(--muted);
-      font-size:13px;
-    }
-  </style>
+  <link rel="icon" type="image/png" href="/logo.png" />
+  <link rel="stylesheet" href="/assets/styles.css" />
 </head>
 
 <body>
-  <div class="wrap">
+  <main class="shell">
+    <!-- TOP CARD -->
+    <section class="topcard">
+      <div class="topcard-inner">
+        <div class="brand">
+          <img class="brand-logo" src="/logo.png" alt="Mokymas plaukti" />
+          <div class="brand-text">
+            <div class="brand-title">Mokymas plaukti</div>
+            <div class="brand-subtitle">Plaukimo pamokos Vilniuje</div>
+          </div>
+        </div>
 
-    <!-- HEADER -->
-    <header>
-      <div class="brand">
-        <img src="logo.png" alt="Mokymas plaukti">
-        <div>
-          <strong>Mokymas plaukti</strong>
-          <span>Plaukimo pamokos Vilniuje</span>
+        <div class="btn-row">
+          <a class="btn" href="tel:+37061162333">Skambinti</a>
+          <a class="btn secondary" href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram</a>
+        </div>
+
+        <div class="btn-row">
+          <a class="btn secondary" href="https://www.facebook.com/" target="_blank" rel="noopener">Facebook</a>
+
+          <div class="lang">
+            <a class="lang-btn active" href="/">LT</a>
+            <a class="lang-btn" href="/en.html">EN</a>
+            <a class="lang-btn" href="/ru.html">RU</a>
+          </div>
+        </div>
+
+        <div class="chips">
+          <span class="chip">19 metų patirtis</span>
+          <span class="chip">Individualiai + grupėse</span>
+          <span class="chip">Vilnius (pagal susitarimą)</span>
         </div>
       </div>
-      <a class="cta" href="tel:+37061162333">Skambinti</a>
-    </header>
+    </section>
 
-    <!-- MAIN -->
-    <main>
-      <section class="card">
-        <h1>Plaukimo pamokos vaikams ir suaugusiems Vilniuje</h1>
-        <p class="sub">
+    <!-- HERO -->
+    <section class="card hero">
+      <div class="card-inner">
+        <div class="eyebrow">
+          <span class="dot"></span>
+          <span>Mokymas plaukti</span>
+        </div>
+
+        <h1 class="hero-title">Plaukimo pamokos vaikams ir suaugusiems Vilniuje</h1>
+
+        <p class="hero-lead">
           Individualios ir grupinės treniruotės. Nuo nulio iki technikos gerinimo.
           19 metų patirtis. Pamokos pagal susitarimą.
         </p>
 
-        <!-- 👇 ВОТ ОНИ — КНОПКИ -->
-        <div class="actions">
-          <a class="btn primary" href="/vaiku-plaukimo-pamokos/">
+        <!-- 2 BIG BUTTONS (kids + adults) -->
+        <div class="actions stack">
+          <a class="cta cta-primary" href="/vaiku-plaukimo-pamokos/">
             👶 Plaukimo pamokos vaikams
           </a>
-
-          <a class="btn primary" href="/suaugusiu-plaukimo-pamokos/">
-            🏊‍♂️ Plaukimo pamokos suaugusiems
-          </a>
-
-          <a class="btn" href="https://www.instagram.com/mokymas.plaukti" target="_blank">
-            📸 Instagram
-          </a>
-
-          <a class="btn" href="https://www.facebook.com/share/1AN3i2aNR3/" target="_blank">
-            📘 Facebook
+          <a class="cta cta-primary" href="/suaugusiu-plaukimo-pamokos/">
+            🏊 Plaukimo pamokos suaugusiems
           </a>
         </div>
-      </section>
-    </main>
+      </div>
+    </section>
+  </main>
 
-    <footer>
-      © <span id="year"></span> Mokymas plaukti • Vilnius
-    </footer>
-  </div>
-
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
+  <script src="/assets/site.js"></script>
 </body>
 </html>
