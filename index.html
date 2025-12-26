@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
 
   <title>Plaukimo pamokos Vilniuje | Vaikams ir suaugusiems | Mokymas plaukti</title>
-  <meta name="description" content="Plaukimo pamokos Vilniuje vaikams ir suaugusiems: individualiai ir grupėse. Nuo nulio iki technikos gerinimo. 19 metų patirtis. +370 611 62333." />
+  <meta name="description" content="Plaukimo pamokos Vilniuje vaikams ir suaugusiems: nuo nulio iki technikos gerinimo. Individualiai ir grupėse. 19 metų patirtis. +370 611 62333." />
   <meta name="robots" content="index,follow,max-image-preview:large" />
   <link rel="canonical" href="https://mokymasplaukti.lt/" />
   <meta name="theme-color" content="#071425" />
@@ -18,51 +18,59 @@
 
   <!-- Open Graph -->
   <meta property="og:title" content="Plaukimo pamokos Vilniuje — Mokymas plaukti" />
-  <meta property="og:description" content="Vaikams ir suaugusiems. Individualiai ir grupėse. 19 metų patirtis." />
+  <meta property="og:description" content="Vaikams ir suaugusiems. Nuo nulio iki technikos gerinimo. 19 metų patirtis." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://mokymasplaukti.lt/" />
   <meta property="og:image" content="https://mokymasplaukti.lt/logo.png" />
   <meta property="og:locale" content="lt_LT" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Plaukimo pamokos Vilniuje | Mokymas plaukti" />
+  <meta name="twitter:description" content="Vaikams ir suaugusiems. 19 metų patirtis. +370 611 62333." />
+  <meta name="twitter:image" content="https://mokymasplaukti.lt/logo.png" />
 
   <link rel="icon" type="image/png" href="/logo.png" />
 
   <style>
     :root{
       --bg1:#071425;
-      --bg2:#0a2542;
+      --bg2:#0a2a4a;
       --card: rgba(255,255,255,.06);
       --card2: rgba(255,255,255,.08);
-      --stroke: rgba(255,255,255,.12);
-      --text:#eaf2ff;
-      --muted: rgba(234,242,255,.72);
-      --btn:#2f8fe6;
-      --btn2:#2a7fd0;
-      --shadow: 0 18px 50px rgba(0,0,0,.45);
-      --r: 26px;
+      --stroke: rgba(255,255,255,.10);
+      --text: rgba(255,255,255,.92);
+      --muted: rgba(255,255,255,.70);
+      --muted2: rgba(255,255,255,.55);
+      --shadow: 0 20px 60px rgba(0,0,0,.35);
+      --radius: 26px;
+
+      --btn1:#2ea6ff;
+      --btn2:#1e7fd6;
+      --btnShadow: 0 18px 40px rgba(0,0,0,.35);
     }
 
-    *{box-sizing:border-box}
+    *{ box-sizing:border-box; }
+    html,body{ height:100%; }
     body{
       margin:0;
       font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-      color:var(--text);
+      color: var(--text);
       background:
-        radial-gradient(1200px 900px at 20% 10%, rgba(72,166,255,.18), transparent 55%),
-        radial-gradient(900px 700px at 80% 30%, rgba(72,166,255,.14), transparent 55%),
+        radial-gradient(1200px 700px at 20% 0%, rgba(46,166,255,.22), transparent 60%),
+        radial-gradient(900px 600px at 90% 10%, rgba(0,195,255,.12), transparent 55%),
         linear-gradient(180deg, var(--bg2), var(--bg1));
-      min-height:100vh;
+      overflow-x:hidden;
     }
 
     .wrap{
-      max-width: 920px;
-      margin: 0 auto;
-      padding: 18px 14px 40px;
+      width:min(980px, 92vw);
+      margin: 22px auto 44px;
     }
 
-    .glass{
-      background: linear-gradient(180deg, rgba(255,255,255,.09), rgba(255,255,255,.05));
-      border:1px solid var(--stroke);
-      border-radius: var(--r);
+    .card{
+      background: linear-gradient(180deg, var(--card2), var(--card));
+      border: 1px solid var(--stroke);
+      border-radius: var(--radius);
       box-shadow: var(--shadow);
       backdrop-filter: blur(10px);
       -webkit-backdrop-filter: blur(10px);
@@ -72,47 +80,42 @@
       padding: 18px;
     }
 
-    .brandRow{
+    .topGrid{
       display:grid;
-      grid-template-columns: 180px 1fr;
+      grid-template-columns: 190px 1fr;
       gap: 16px;
       align-items:center;
     }
 
     .logoBox{
-      background: rgba(255,255,255,.08);
-      border: 1px solid rgba(255,255,255,.12);
+      background: rgba(255,255,255,.92);
       border-radius: 18px;
       padding: 14px;
       display:flex;
-      align-items:center;
       justify-content:center;
-      min-height: 120px;
+      align-items:center;
+      min-height: 110px;
     }
     .logoBox img{
-      width: 100%;
-      max-width: 160px;
-      height: auto;
+      max-width: 100%;
+      height:auto;
       display:block;
-      object-fit: contain;
     }
 
-    .brandTitle{
-      font-weight: 800;
-      font-size: 34px;
-      line-height: 1.05;
-      margin: 0 0 8px;
-      letter-spacing: .2px;
-    }
-    .brandSub{
+    .brand h1{
       margin:0;
+      font-size: 44px;
+      line-height:1.05;
+      letter-spacing:.2px;
+    }
+    .brand p{
+      margin:10px 0 0;
       color: var(--muted);
-      font-size: 16px;
-      line-height: 1.35;
-      font-weight: 600;
+      font-size: 18px;
+      line-height:1.35;
     }
 
-    .btnGrid{
+    .controls{
       margin-top: 16px;
       display:grid;
       grid-template-columns: 1fr 1fr;
@@ -126,52 +129,58 @@
       gap:10px;
       text-decoration:none;
       color: var(--text);
-      height: 58px;
-      border-radius: 18px;
-      border: 1px solid rgba(255,255,255,.12);
-      background: rgba(255,255,255,.06);
-      font-size: 20px;
       font-weight: 800;
       letter-spacing:.2px;
+      border-radius: 18px;
+      padding: 16px 18px;
+      border: 1px solid rgba(255,255,255,.10);
+      background: rgba(255,255,255,.06);
       box-shadow: 0 10px 25px rgba(0,0,0,.22);
+      transition: transform .08s ease, filter .15s ease;
+      user-select:none;
+      -webkit-tap-highlight-color: transparent;
     }
-    .btn.primary{
-      background: linear-gradient(180deg, var(--btn), var(--btn2));
-      border-color: rgba(255,255,255,.18);
-    }
-    .btn:active{transform: translateY(1px)}
+    .btn:active{ transform: translateY(1px); }
 
+    .btnPrimary{
+      background: linear-gradient(180deg, var(--btn1), var(--btn2));
+      border: 1px solid rgba(255,255,255,.18);
+      box-shadow: var(--btnShadow);
+    }
+
+    /* язык — как кнопки, но в одной плашке */
     .langRow{
-      margin-top: 12px;
       display:grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 12px;
+      grid-template-columns: 1fr;
+      gap: 10px;
+      margin-top: 12px;
+    }
+    .langWrap{
+      background: rgba(255,255,255,.05);
+      border: 1px solid rgba(255,255,255,.10);
+      border-radius: 18px;
+      padding: 10px;
+      display:flex;
+      gap: 10px;
+      justify-content: space-between;
       align-items:center;
     }
-
-    .langPills{
-      display:flex;
-      gap: 8px;
-      background: rgba(255,255,255,.05);
-      border:1px solid rgba(255,255,255,.10);
-      border-radius: 18px;
-      padding: 8px;
-      justify-content: space-between;
-    }
-    .pill{
+    .langWrap a{
       flex:1;
       text-align:center;
       text-decoration:none;
-      color: rgba(234,242,255,.82);
       font-weight: 900;
-      padding: 10px 0;
+      padding: 12px 10px;
       border-radius: 14px;
+      color: var(--muted);
       border: 1px solid transparent;
+      background: transparent;
     }
-    .pill.active{
-      background: linear-gradient(180deg, rgba(47,143,230,.95), rgba(42,127,208,.95));
-      color: var(--text);
-      border-color: rgba(255,255,255,.18);
+    .langWrap a.active{
+      color: white;
+      background: linear-gradient(180deg, rgba(46,166,255,.95), rgba(30,127,214,.95));
+      border: 1px solid rgba(255,255,255,.18);
+      box-shadow: 0 16px 34px rgba(0,0,0,.30);
     }
 
     .chips{
@@ -185,105 +194,81 @@
     .chip{
       padding: 10px 14px;
       border-radius: 999px;
-      border:1px solid rgba(255,255,255,.12);
-      background: rgba(0,0,0,.12);
-      color: rgba(234,242,255,.78);
-      font-weight: 800;
-      font-size: 14px;
+      background: rgba(255,255,255,.05);
+      border: 1px solid rgba(255,255,255,.10);
+      color: var(--muted);
+      font-weight: 700;
+      letter-spacing:.2px;
+      white-space: nowrap;
+    }
+
+    .hero{
+      margin-top: 18px;
+      padding: 22px 20px 18px;
+    }
+
+    /* ВАЖНО: убрали верхний “kicker/плашку” — как ты просил */
+    /* Поэтому тут сразу заголовок */
+    .hero h2{
+      margin:0;
+      font-size: 58px;
+      line-height:1.03;
       letter-spacing:.2px;
     }
-
-    .wave{
-      margin-top: 14px;
-      height: 56px;
-      border-radius: 18px;
-      border: 1px solid rgba(255,255,255,.10);
-      background:
-        radial-gradient(600px 70px at 10% 90%, rgba(72,166,255,.22), transparent 60%),
-        radial-gradient(600px 70px at 70% 20%, rgba(72,166,255,.18), transparent 60%),
-        rgba(255,255,255,.05);
-      opacity:.9;
-    }
-
-    .content{
-      margin-top: 14px;
-      padding: 18px;
-    }
-
-    .kicker{
-      display:inline-flex;
-      align-items:center;
-      gap:10px;
-      padding: 12px 16px;
-      border-radius: 999px;
-      border:1px solid rgba(255,255,255,.12);
-      background: rgba(0,0,0,.10);
-      font-weight: 900;
-      color: rgba(234,242,255,.85);
-      margin-bottom: 10px;
-    }
-    .dot{
-      width:10px;height:10px;border-radius:999px;
-      background: rgba(72,166,255,.9);
-      box-shadow: 0 0 0 6px rgba(72,166,255,.12);
-    }
-
-    h1{
-      margin: 10px 0 10px;
-      font-size: 44px;
-      line-height: 1.06;
-      letter-spacing: .2px;
-    }
-    .lead{
-      margin: 0 0 18px;
+    .hero p{
+      margin: 14px 0 0;
       color: var(--muted);
-      font-size: 18px;
-      line-height: 1.5;
-      font-weight: 650;
-      max-width: 60ch;
+      font-size: 20px;
+      line-height:1.45;
+      max-width: 62ch;
     }
 
     .choose{
+      margin-top: 18px;
       display:grid;
+      grid-template-columns: 1fr;
       gap: 12px;
-      margin-top: 6px;
     }
 
-    /* ВАЖНО: обе кнопки одинаковые (цвет/размер) */
-    .bigChoice{
-      height: 76px;
-      border-radius: 22px;
+    /* ДВЕ одинаковые кнопки — одинаковый цвет/размер */
+    .choose .bigChoice{
+      width: 100%;
+      padding: 18px 18px;
+      border-radius: 20px;
       font-size: 20px;
       font-weight: 900;
-      background: linear-gradient(180deg, var(--btn), var(--btn2));
+      background: linear-gradient(180deg, var(--btn1), var(--btn2));
       border: 1px solid rgba(255,255,255,.18);
-      box-shadow: 0 16px 35px rgba(0,0,0,.28);
+      box-shadow: var(--btnShadow);
     }
 
-    .footerLinks{
-      margin-top: 14px;
-      display:flex;
-      flex-wrap: wrap;
-      gap: 12px;
-      align-items:center;
-    }
-    .footerLinks a{
-      color: rgba(234,242,255,.80);
-      font-weight: 800;
-      text-decoration: none;
-      border-bottom: 1px solid rgba(234,242,255,.25);
-      padding-bottom: 2px;
+    .spacerWave{
+      margin-top: 18px;
+      height: 70px;
+      border-radius: var(--radius);
+      background:
+        radial-gradient(120px 60px at 20% 30%, rgba(46,166,255,.20), transparent 70%),
+        radial-gradient(140px 70px at 55% 60%, rgba(0,195,255,.14), transparent 70%),
+        radial-gradient(150px 80px at 85% 45%, rgba(46,166,255,.18), transparent 70%),
+        rgba(255,255,255,.04);
+      border: 1px solid rgba(255,255,255,.08);
+      box-shadow: 0 18px 45px rgba(0,0,0,.25);
     }
 
-    @media (max-width: 520px){
-      .brandRow{grid-template-columns: 1fr; text-align:left}
-      .logoBox{min-height: 110px}
-      .brandTitle{font-size: 32px}
-      h1{font-size: 38px}
-      .btnGrid{grid-template-columns: 1fr 1fr}
-      .langRow{grid-template-columns: 1fr}
-      .btn{height:56px; font-size:18px}
-      .bigChoice{height: 74px; font-size: 19px}
+    @media (max-width: 640px){
+      .topGrid{
+        grid-template-columns: 1fr;
+      }
+      .brand h1{ font-size: 40px; }
+      .hero h2{ font-size: 44px; }
+      .controls{ grid-template-columns: 1fr 1fr; }
+      .btn{ padding: 14px 14px; }
+    }
+
+    @media (max-width: 420px){
+      .controls{ grid-template-columns: 1fr; }
+      .brand h1{ font-size: 38px; }
+      .hero h2{ font-size: 40px; }
     }
   </style>
 </head>
@@ -291,63 +276,57 @@
 <body>
   <div class="wrap">
 
-    <!-- TOP CARD -->
-    <section class="glass top">
-      <div class="brandRow">
-        <div class="logoBox" aria-label="Mokymas plaukti logotipas">
+    <!-- TOP CARD (оставляем как у тебя, без лишних дублей) -->
+    <section class="card top">
+      <div class="topGrid">
+        <div class="logoBox">
           <img src="/logo.png" alt="Mokymas plaukti" />
         </div>
 
-        <div>
-          <h2 class="brandTitle">Mokymas<br/>plaukti</h2>
-          <p class="brandSub">Plaukimo pamokos Vilniuje • individualiai ir grupėse</p>
+        <div class="brand">
+          <h1>Mokymas<br/>plaukti</h1>
+          <p>Plaukimo pamokos Vilniuje • individualiai ir grupėse</p>
         </div>
       </div>
 
-      <div class="btnGrid">
-        <a class="btn primary" href="tel:+37061162333" aria-label="Skambinti +370 611 62333">Skambinti</a>
-        <a class="btn" href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram</a>
-        <a class="btn" href="https://www.facebook.com/" target="_blank" rel="noopener">Facebook</a>
+      <div class="controls">
+        <a class="btn btnPrimary" href="tel:+37061162333">Skambinti</a>
+        <!-- поменяй ссылку на свой Instagram -->
+        <a class="btn" href="https://instagram.com/" target="_blank" rel="noopener">Instagram</a>
+        <!-- поменяй ссылку на свой Facebook -->
+        <a class="btn" href="https://facebook.com/" target="_blank" rel="noopener">Facebook</a>
 
-        <div class="langPills" aria-label="Kalbų pasirinkimas">
-          <a class="pill active" href="/">LT</a>
-          <a class="pill" href="/en.html">EN</a>
-          <a class="pill" href="/ru.html">RU</a>
+        <div class="langWrap" aria-label="Kalbos">
+          <a class="active" href="/">LT</a>
+          <a href="/en.html">EN</a>
+          <a href="/ru.html">RU</a>
         </div>
       </div>
 
-      <div class="chips" aria-label="Trumpa informacija">
-        <span class="chip">Vilnius</span>
-        <span class="chip">19 metų patirtis</span>
-        <span class="chip">Individualiai + grupėse</span>
-        <span class="chip">Pagal susitarimą</span>
+      <div class="chips">
+        <div class="chip">Vilnius</div>
+        <div class="chip">19 metų patirtis</div>
+        <div class="chip">Individualiai + grupėse</div>
+        <div class="chip">Pagal susitarimą</div>
       </div>
-
-      <div class="wave" aria-hidden="true"></div>
     </section>
 
-    <!-- CONTENT CARD -->
-    <section class="glass content">
-      <div class="kicker"><span class="dot"></span> Plaukimo pamokos</div>
-
-      <h1>Plaukimo pamokos Vilniuje vaikams ir suaugusiems</h1>
-
-      <p class="lead">
+    <!-- HERO -->
+    <section class="card hero">
+      <!-- УБРАЛИ красную плашку “Plaukimo pamokos” (то, что ты обвёл) -->
+      <h2>Plaukimo pamokos Vilniuje vaikams ir suaugusiems</h2>
+      <p>
         Individualios ir grupinės treniruotės. Nuo nulio iki technikos gerinimo.
-        Padėsiu jaustis užtikrintai vandenyje ir pasiekti rezultatą.
+        Pamokos pagal susitarimą.
       </p>
 
-      <!-- одинаковые кнопки (цвет и размер) -->
       <div class="choose">
         <a class="btn bigChoice" href="/vaiku-plaukimo-pamokos/">👶 Plaukimo pamokos vaikams</a>
         <a class="btn bigChoice" href="/suaugusiu-plaukimo-pamokos/">🏊 Plaukimo pamokos suaugusiems</a>
       </div>
-
-      <div class="footerLinks" aria-label="Papildomos nuorodos">
-        <a href="/vaiku-plaukimo-pamokos/">Vaikams</a>
-        <a href="/suaugusiu-plaukimo-pamokos/">Suaugusiems</a>
-      </div>
     </section>
+
+    <div class="spacerWave" aria-hidden="true"></div>
 
   </div>
 </body>
