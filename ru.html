@@ -68,6 +68,7 @@
       padding:14px;border-radius:18px;border:1px solid var(--stroke);
       background:rgba(255,255,255,.06);
       text-decoration:none;font-weight:800;
+      color:inherit;
     }
     .btn.primary{
       background: linear-gradient(180deg, rgba(58,169,255,.95), rgba(47,147,238,.85));
@@ -98,10 +99,25 @@
       border:1px solid rgba(58,169,255,.18);
       background: linear-gradient(180deg, rgba(58,169,255,.86), rgba(47,147,238,.78));
       box-shadow: 0 16px 34px rgba(58,169,255,.18);
+      color:#fff;
     }
     .bigBtn.secondary{border-color:rgba(255,255,255,.12);background:linear-gradient(180deg, rgba(58,169,255,.70), rgba(47,147,238,.60))}
     .bigBtn span{font-size:20px}
     .footNote{margin-top:14px;color:var(--muted2);font-size:14px;line-height:1.5}
+
+    /* ✅ footer чтобы выглядел нормально */
+    .footer{
+      margin-top:18px;
+      padding:14px 16px;
+      border-radius:18px;
+      border:1px solid var(--stroke);
+      background:rgba(255,255,255,.03);
+      color:rgba(255,255,255,.72);
+      font-size:13px;
+      font-weight:650;
+    }
+    .footer a{color:rgba(255,255,255,.85);text-decoration:underline}
+
     @media (max-width:560px){.topGrid{grid-template-columns:1fr}.btnRow,.langRow{grid-template-columns:1fr 1fr}h1{font-size:44px}}
     @media (max-width:420px){.btnRow,.langRow{grid-template-columns:1fr}h1{font-size:40px}}
   </style>
@@ -163,20 +179,15 @@
       </div>
     </section>
 
+    <div class="footer">
+      © <span id="year"></span> Mokymas plaukti ·
+      <a href="privacy-ru.html">Политика конфиденциальности</a>
+    </div>
+
   </div>
-  </section>
-</div>
 
-<div class="footer">
-  © <span id="year"></span> Mokymas plaukti ·
-  <a href="privacy-ru.html">Политика конфиденциальности</a>
-</div>
-
-<script>
-  document.getElementById("year").textContent = new Date().getFullYear();
-</script>
-
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
-</body>
-
