@@ -1,43 +1,290 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+
   <title>Privacy Policy | Mokymas plaukti</title>
-  <meta name="robots" content="index, follow">
+  <meta name="description" content="Mokymas plaukti privacy policy (GDPR): what data we collect, why we process it, how long we keep it, and your rights." />
+  <meta name="robots" content="index,follow" />
+  <link rel="canonical" href="https://mokymasplaukti.lt/privacy-en.html" />
+  <meta name="theme-color" content="#071425" />
+
+  <!-- Hreflang -->
+  <link rel="alternate" href="https://mokymasplaukti.lt/privacy-lt.html" hreflang="lt" />
+  <link rel="alternate" href="https://mokymasplaukti.lt/privacy-en.html" hreflang="en" />
+  <link rel="alternate" href="https://mokymasplaukti.lt/privacy-ru.html" hreflang="ru" />
+  <link rel="alternate" href="https://mokymasplaukti.lt/privacy-en.html" hreflang="x-default" />
+
+  <link rel="icon" type="image/png" href="/logo.png" />
+
+  <!-- Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --brand:#1e6fd9;
+      --brand2:#6fd3ff;
+      --bg:#071425;
+      --card:#0d2240;
+      --text:#eef5ff;
+      --muted:#b8cdf2;
+      --line:rgba(184,205,242,.18);
+      --shadow:0 16px 40px rgba(0,0,0,.45);
+      --radius:18px;
+      --font:"Inter", system-ui, -apple-system, Segoe UI, Roboto, Arial;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family:var(--font);
+      color:var(--text);
+      background:
+        radial-gradient(1000px 520px at 20% 5%, rgba(30,111,217,.28), transparent 60%),
+        radial-gradient(900px 500px at 95% 20%, rgba(111,211,255,.18), transparent 60%),
+        var(--bg);
+    }
+    a{color:inherit}
+    .wrap{max-width:1120px;margin:0 auto;padding:16px 16px 48px;}
+
+    .header{
+      position:sticky; top:0; z-index:50;
+      margin-top:10px;
+      border:1px solid var(--line);
+      border-radius:22px;
+      background: linear-gradient(135deg, rgba(30,111,217,.22), rgba(111,211,255,.10));
+      box-shadow: var(--shadow);
+      overflow:hidden;
+      backdrop-filter: blur(10px);
+    }
+    .header-inner{
+      display:flex; align-items:center; justify-content:space-between;
+      gap:14px;
+      padding:14px 14px 10px;
+      flex-wrap:wrap;
+    }
+    .brand{
+      display:flex; align-items:center; gap:14px;
+      text-decoration:none; color:var(--text);
+      min-width:320px;
+    }
+    .logo-frame{
+      display:flex; align-items:center; justify-content:center;
+      padding:10px 12px;
+      border-radius:18px;
+      background: rgba(255,255,255,.92);
+      border:1px solid rgba(255,255,255,.25);
+      box-shadow: 0 18px 34px rgba(0,0,0,.28);
+    }
+    .logo{height:78px;width:auto;display:block;}
+    .brand-copy{display:flex; flex-direction:column; gap:6px;}
+    .brand-title{font-weight:900;font-size:18px;letter-spacing:.2px;line-height:1.05;}
+    .brand-tag{color:var(--muted);font-weight:700;font-size:12px;max-width:60ch;}
+
+    .header-cta{display:flex;align-items:center;gap:10px;flex-wrap:wrap;justify-content:flex-end;}
+    .cta{
+      display:inline-flex; align-items:center; justify-content:center;
+      padding:11px 14px;
+      border-radius:14px;
+      font-weight:900;
+      text-decoration:none;
+      border:1px solid var(--line);
+      user-select:none;
+      white-space:nowrap;
+    }
+    .cta-primary{
+      background: linear-gradient(135deg, rgba(30,111,217,.95), rgba(111,211,255,.75));
+      color:#fff;
+      box-shadow: 0 12px 26px rgba(30,111,217,.25);
+      min-width:138px;
+    }
+    .cta-ghost{background: rgba(255,255,255,.06);color:var(--text);}
+
+    .lang{
+      display:flex; gap:8px; padding:6px;
+      border-radius:16px; border:1px solid var(--line);
+      background: rgba(255,255,255,.05);
+    }
+    .lang a{
+      display:inline-block;
+      padding:8px 10px;
+      border-radius:12px;
+      text-decoration:none;
+      color:var(--muted);
+      font-weight:900;
+    }
+    .lang a.active{
+      background: linear-gradient(135deg, rgba(30,111,217,.95), rgba(111,211,255,.75));
+      color:#fff;
+    }
+
+    .card{
+      margin-top:16px;
+      border-radius:var(--radius);
+      border:1px solid var(--line);
+      background: linear-gradient(180deg, rgba(30,111,217,.12), rgba(13,34,64,.88));
+      box-shadow: var(--shadow);
+      overflow:hidden;
+    }
+    .content{padding:22px 22px 8px;}
+    h1{margin:0 0 10px;font-size: clamp(26px, 4vw, 40px);line-height:1.12;letter-spacing:-.35px;font-weight:900;}
+    h2{margin:18px 0 8px;font-size:18px;font-weight:900;}
+    p,li{color:var(--muted);font-weight:650;line-height:1.7;}
+    ul{margin:8px 0 0;padding-left:18px;}
+    .note{
+      margin:14px 0 0;
+      padding:12px 14px;
+      border-radius:14px;
+      border:1px solid var(--line);
+      background: rgba(255,255,255,.04);
+      color: rgba(238,245,255,.82);
+      font-weight:800;
+      font-size:13px;
+    }
+    .footer{
+      margin-top:16px;
+      padding:14px 16px;
+      border-radius:18px;
+      border:1px solid var(--line);
+      background: rgba(255,255,255,.03);
+      color: rgba(238,245,255,.72);
+      font-size:13px;
+      font-weight:650;
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px;
+      align-items:center;
+      justify-content:space-between;
+    }
+    .footer a{color:rgba(238,245,255,.86);font-weight:800;text-decoration:none;border-bottom:1px dashed rgba(238,245,255,.35)}
+    .footer a:hover{border-bottom-color:rgba(238,245,255,.85)}
+    @media (max-width: 640px){
+      .brand{min-width:0}
+      .logo{height:64px}
+      .footer{flex-direction:column;align-items:flex-start}
+    }
+  </style>
 </head>
+
 <body>
+  <div class="wrap">
+    <header class="header">
+      <div class="header-inner">
+        <a class="brand" href="/en.html">
+          <span class="logo-frame"><img src="/logo.png" class="logo" alt="Mokymas plaukti"></span>
+          <div class="brand-copy">
+            <div class="brand-title">Mokymas plaukti</div>
+            <div class="brand-tag">Privacy Policy (GDPR) • Vilnius</div>
+          </div>
+        </a>
 
-<h1>Privacy Policy</h1>
+        <div class="header-cta">
+          <a class="cta cta-primary" href="tel:+37061162333">Call</a>
+          <a class="cta cta-ghost" href="mailto:info@mokymasplaukti.lt">Email</a>
+          <nav class="lang" aria-label="Languages">
+            <a href="/privacy-lt.html">LT</a>
+            <a class="active" href="/privacy-en.html">EN</a>
+            <a href="/privacy-ru.html">RU</a>
+          </nav>
+        </div>
+      </div>
+    </header>
 
-<p>This website is owned by <strong>Ivan Gvozdov</strong>, operating under individual activity in Vilnius, Lithuania.</p>
+    <main class="card">
+      <div class="content">
+        <h1>Privacy Policy</h1>
 
-<h2>Data we collect</h2>
-<ul>
-  <li>technical data (IP address, browser type);</li>
-  <li>data you provide voluntarily (via phone or social media).</li>
-</ul>
+        <p>
+          This Privacy Policy explains how personal data is processed when you visit mokymasplaukti.lt or contact us by phone,
+          email, or via social media.
+        </p>
 
-<h2>Purpose of data processing</h2>
-<ul>
-  <li>communication with clients;</li>
-  <li>website functionality and security.</li>
-</ul>
+        <h2>Data Controller</h2>
+        <ul>
+          <li><b>Service provider:</b> Ivan Gvozdov</li>
+          <li><b>Business form:</b> individual activity</li>
+          <li><b>Location:</b> Vilnius, Lithuania</li>
+          <li><b>Contacts:</b> <a href="mailto:info@mokymasplaukti.lt">info@mokymasplaukti.lt</a>, <a href="tel:+37061162333">+370 611 62333</a></li>
+        </ul>
 
-<h2>Cookies</h2>
-<p>This website uses only technical cookies necessary for operation.</p>
+        <h2>What data we may collect</h2>
+        <ul>
+          <li><b>Contact data:</b> name (if provided), phone number, email address, and message content.</li>
+          <li><b>Technical data:</b> IP address, device/browser information, visit time and page views (in server logs).</li>
+          <li><b>Social media:</b> if you message via Instagram/Facebook, we receive your profile name and message under those platforms’ rules.</li>
+        </ul>
 
-<h2>Data sharing</h2>
-<p>Personal data is not shared with third parties.</p>
+        <h2>Purposes of processing</h2>
+        <ul>
+          <li>to respond to enquiries and communicate with clients;</li>
+          <li>to arrange lesson time / location / format;</li>
+          <li>to ensure website security and stable operation;</li>
+          <li>to resolve disputes or legal matters (if needed).</li>
+        </ul>
 
-<h2>Your rights</h2>
-<p>You have the right to access, correct or request deletion of your data.</p>
+        <h2>Legal bases (GDPR)</h2>
+        <ul>
+          <li><b>Consent</b> (when you voluntarily contact us).</li>
+          <li><b>Contract performance</b> (when we agree on providing services).</li>
+          <li><b>Legitimate interests</b> (website security, abuse prevention, basic server logs).</li>
+          <li><b>Legal obligation</b> (e.g., accounting or legal requirements, where applicable).</li>
+        </ul>
 
-<h2>Contact</h2>
-<p>
-Ivan Gvozdov<br>
-Vilnius, Lithuania<br>
-Phone: +370 611 62333
-</p>
+        <h2>How long we keep data</h2>
+        <ul>
+          <li>enquiries and messages — as long as needed to arrange/provide the service and reasonably afterwards (e.g., dispute prevention);</li>
+          <li>accounting documents — as required by law (where applicable);</li>
+          <li>technical server logs — for a limited time for security purposes.</li>
+        </ul>
 
+        <h2>Recipients of data</h2>
+        <ul>
+          <li>data may be processed by service providers (e.g., hosting, email) only to the extent necessary to deliver the service;</li>
+          <li>we do not sell or transfer personal data to third parties, except where required by law.</li>
+        </ul>
+
+        <h2>Cookies</h2>
+        <p>
+          Currently, the website uses only essential technical cookies required for proper operation.
+          If analytics or advertising tools are added in the future, this policy will be updated.
+        </p>
+
+        <h2>Your rights</h2>
+        <ul>
+          <li>the right to access your personal data;</li>
+          <li>the right to request correction of inaccurate data;</li>
+          <li>the right to request deletion (where applicable);</li>
+          <li>the right to restrict processing (where applicable);</li>
+          <li>the right to data portability (where applicable);</li>
+          <li>the right to object to processing based on legitimate interests (where applicable);</li>
+          <li>the right to withdraw consent at any time (this does not affect processing before withdrawal).</li>
+        </ul>
+
+        <h2>Complaints</h2>
+        <p>
+          If you believe your rights have been violated, you may file a complaint with the <b>State Data Protection Inspectorate of Lithuania (VDAI)</b>.
+        </p>
+
+        <div class="note">
+          Privacy questions: <a href="mailto:info@mokymasplaukti.lt">info@mokymasplaukti.lt</a> •
+          Tel. <a href="tel:+37061162333">+370 611 62333</a>
+        </div>
+      </div>
+    </main>
+
+    <div class="footer">
+      <div>© <span id="year"></span> Mokymas plaukti</div>
+      <div>
+        <a href="/en.html">Home</a> •
+        <a href="/privacy-en.html">Privacy Policy</a>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
