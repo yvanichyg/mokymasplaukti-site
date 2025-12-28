@@ -1,99 +1,233 @@
+
 <!doctype html>
 <html lang="lt">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
 
-  <title>Privatumo politika | Mokymas plaukti</title>
-  <meta name="description" content="Privatumo politika pagal BDAR (GDPR). Informacija apie asmens duomenų tvarkymą svetainėje mokymasplaukti.lt." />
-  <meta name="robots" content="index,follow" />
+  <!-- SEO -->
+  <title>Privatumo politika (BDAR/GDPR) | Mokymas plaukti</title>
+  <meta name="description" content="Privatumo politika pagal BDAR (GDPR): kokius duomenis renkame, kodėl, kiek laiko saugome ir kokios yra jūsų teisės." />
+  <meta name="robots" content="index,follow,max-image-preview:large" />
   <link rel="canonical" href="https://mokymasplaukti.lt/privacy-lt.html" />
   <meta name="theme-color" content="#071425" />
 
+  <!-- Hreflang -->
+  <link rel="alternate" href="https://mokymasplaukti.lt/privacy-lt.html" hreflang="lt" />
+  <link rel="alternate" href="https://mokymasplaukti.lt/privacy-en.html" hreflang="en" />
+  <link rel="alternate" href="https://mokymasplaukti.lt/privacy-ru.html" hreflang="ru" />
+  <link rel="alternate" href="https://mokymasplaukti.lt/privacy-lt.html" hreflang="x-default" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Privatumo politika (BDAR/GDPR) — Mokymas plaukti" />
+  <meta property="og:description" content="Informacija apie asmens duomenų tvarkymą svetainėje mokymasplaukti.lt." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://mokymasplaukti.lt/privacy-lt.html" />
+  <meta property="og:image" content="https://mokymasplaukti.lt/logo.png" />
+  <meta property="og:locale" content="lt_LT" />
+
   <link rel="icon" type="image/png" href="/logo.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --brand:#1e6fd9; --brand2:#6fd3ff;
+      --bg:#071425; --card:#0d2240; --text:#eef5ff; --muted:#b8cdf2; --line:rgba(184,205,242,.18);
+      --shadow:0 16px 40px rgba(0,0,0,.45); --radius:18px;
+      --font:"Inter", system-ui, -apple-system, Segoe UI, Roboto, Arial;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0; font-family:var(--font); color:var(--text);
+      background:
+        radial-gradient(1000px 520px at 20% 5%, rgba(30,111,217,.28), transparent 60%),
+        radial-gradient(900px 500px at 95% 20%, rgba(111,211,255,.18), transparent 60%),
+        var(--bg);
+    }
+    a{color:inherit}
+    .wrap{max-width:1120px;margin:0 auto;padding:16px 16px 48px;}
+
+    .header{
+      position:sticky;top:0;z-index:50;margin-top:10px;border:1px solid var(--line);border-radius:22px;
+      background: linear-gradient(135deg, rgba(30,111,217,.22), rgba(111,211,255,.10));
+      box-shadow: var(--shadow); overflow:hidden; backdrop-filter: blur(10px);
+    }
+    .header-inner{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:14px 14px 10px;}
+    .brand{display:flex;align-items:center;gap:14px;text-decoration:none;color:var(--text);min-width:360px;}
+    .logo-frame{
+      display:flex;align-items:center;justify-content:center;padding:10px 12px;border-radius:18px;
+      background: rgba(255,255,255,.92);border:1px solid rgba(255,255,255,.25);
+      box-shadow: 0 18px 34px rgba(0,0,0,.28);
+    }
+    .logo{height:108px;width:auto;display:block;}
+    .brand-copy{display:flex;flex-direction:column;gap:6px;}
+    .brand-title{font-weight:900;font-size:20px;letter-spacing:.2px;line-height:1.05;}
+    .brand-tag{color:var(--muted);font-weight:700;font-size:13px;max-width:58ch;}
+
+    .header-cta{display:flex;align-items:center;gap:10px;flex-wrap:wrap;justify-content:flex-end;}
+    .cta{
+      display:inline-flex;align-items:center;justify-content:center;padding:11px 14px;border-radius:14px;font-weight:900;
+      text-decoration:none;border:1px solid var(--line);user-select:none;white-space:nowrap;background: rgba(255,255,255,.06);
+    }
+    .cta-primary{
+      background: linear-gradient(135deg, rgba(30,111,217,.95), rgba(111,211,255,.75));color:#fff;
+      box-shadow: 0 12px 26px rgba(30,111,217,.25);min-width:138px;
+    }
+
+    .lang{display:flex;gap:8px;padding:6px;border-radius:16px;border:1px solid var(--line);background: rgba(255,255,255,.05);}
+    .lang a{text-decoration:none;padding:8px 10px;border-radius:12px;color:var(--muted);font-weight:900;}
+    .lang a.active{background: linear-gradient(135deg, rgba(30,111,217,.95), rgba(111,211,255,.75));color:#fff;}
+
+    .card{margin-top:16px;border-radius:var(--radius);border:1px solid var(--line);
+      background: linear-gradient(180deg, rgba(30,111,217,.12), rgba(13,34,64,.88));
+      box-shadow: var(--shadow); overflow:hidden;
+    }
+    .content{padding:22px 22px 18px;}
+    h1{margin:0 0 10px;font-size: clamp(26px, 4vw, 40px);line-height:1.12;letter-spacing:-.35px;font-weight:900;}
+    h2{margin:18px 0 8px;font-size:18px;font-weight:900;}
+    p,li{color:var(--muted);font-weight:650;line-height:1.7;}
+    ul{margin:8px 0 0;padding-left:18px;}
+    .note{
+      margin:14px 0 0;padding:12px 14px;border-radius:14px;border:1px solid var(--line);
+      background: rgba(255,255,255,.04); color: rgba(238,245,255,.82); font-weight:800; font-size:13px;
+    }
+    .footer{
+      margin-top:16px;padding:14px 16px;border-radius:18px;border:1px solid var(--line);background: rgba(255,255,255,.03);
+      color: rgba(238,245,255,.72);font-size:13px;font-weight:650;display:flex;flex-wrap:wrap;gap:10px;align-items:center;justify-content:space-between;
+    }
+    .footer a{color:rgba(238,245,255,.86);font-weight:800;text-decoration:none;border-bottom:1px dashed rgba(238,245,255,.35)}
+    .footer a:hover{border-bottom-color:rgba(238,245,255,.85)}
+    @media (max-width: 940px){
+      .header-inner{flex-direction:column;align-items:stretch}
+      .brand{min-width:0}
+      .header-cta{justify-content:flex-start}
+      .logo{height:92px}
+    }
+  </style>
 </head>
 
-<body style="font-family:Arial, sans-serif; line-height:1.6; max-width:900px; margin:40px auto; padding:0 16px;">
+<body>
+  <div class="wrap">
+    <header class="header">
+      <div class="header-inner">
+        <a class="brand" href="/">
+          <span class="logo-frame"><img src="/logo.png" class="logo" alt="Mokymas plaukti"></span>
+          <div class="brand-copy">
+            <div class="brand-title">Mokymas plaukti</div>
+            <div class="brand-tag">Privatumo politika (BDAR/GDPR) • Vilnius</div>
+          </div>
+        </a>
 
-<h1>Privatumo politika</h1>
+        <div class="header-cta">
+          <a class="cta cta-primary" href="tel:+37061162333">Skambinti</a>
+          <a class="cta" href="mailto:info@mokymasplaukti.lt">El. paštas</a>
 
-<p>
-Ši privatumo politika paaiškina, kaip tvarkomi asmens duomenys, kai lankotės svetainėje
-<b>mokymasplaukti.lt</b> arba susisiekiate telefonu, el. paštu ar per socialinius tinklus.
-</p>
+          <div class="lang" aria-label="Kalbos">
+            <a class="active" href="/privacy-lt.html">LT</a>
+            <a href="/privacy-en.html">EN</a>
+            <a href="/privacy-ru.html">RU</a>
+          </div>
+        </div>
+      </div>
+    </header>
 
-<h2>1. Duomenų valdytojas</h2>
-<ul>
-  <li><b>Vardas:</b> Ivan Gvozdov</li>
-  <li><b>Veiklos forma:</b> individuali veikla</li>
-  <li><b>Individualios veiklos pažymos Nr.:</b> 1092657</li>
-  <li><b>Vieta:</b> Vilnius, Lietuva</li>
-  <li><b>El. paštas:</b> info@mokymasplaukti.lt</li>
-  <li><b>Telefonas:</b> +370 611 62333</li>
-</ul>
+    <main class="card">
+      <div class="content">
+        <h1>Privatumo politika</h1>
+        <p>
+          Ši privatumo politika paaiškina, kaip tvarkomi asmens duomenys, kai lankotės svetainėje
+          <b>mokymasplaukti.lt</b> arba susisiekiate telefonu, el. paštu ar per socialinius tinklus.
+        </p>
 
-<h2>2. Kokius asmens duomenis renkame</h2>
-<ul>
-  <li>kontaktinius duomenis (vardas, telefono numeris, el. paštas, žinutės turinys), kai susisiekiate savanoriškai;</li>
-  <li>techninius duomenis (IP adresas, naršyklės tipas, įrenginys), kurie automatiškai įrašomi serverio žurnaluose;</li>
-  <li>duomenis, pateiktus per socialinius tinklus (Instagram, Facebook), pagal tų platformų taisykles.</li>
-</ul>
+        <h2>1. Duomenų valdytojas</h2>
+        <ul>
+          <li><b>Vardas:</b> Ivan Gvozdov</li>
+          <li><b>Veiklos forma:</b> individuali veikla</li>
+          <li><b>Individualios veiklos pažymos Nr.:</b> 1092657</li>
+          <li><b>Vieta:</b> Vilnius, Lietuva</li>
+          <li><b>El. paštas:</b> <a href="mailto:info@mokymasplaukti.lt">info@mokymasplaukti.lt</a></li>
+          <li><b>Telefonas:</b> <a href="tel:+37061162333">+370 611 62333</a></li>
+        </ul>
 
-<h2>3. Duomenų tvarkymo tikslai</h2>
-<ul>
-  <li>atsakyti į užklausas ir bendrauti su klientais;</li>
-  <li>susitarti dėl plaukimo pamokų;</li>
-  <li>užtikrinti svetainės saugumą ir techninį veikimą;</li>
-  <li>spręsti galimus teisinius ginčus.</li>
-</ul>
+        <h2>2. Kokius asmens duomenis renkame</h2>
+        <ul>
+          <li>kontaktinius duomenis (vardas, telefono numeris, el. paštas, žinutės turinys), kai susisiekiate savanoriškai;</li>
+          <li>techninius duomenis (IP adresas, naršyklės tipas, įrenginys), kurie automatiškai įrašomi serverio žurnaluose;</li>
+          <li>duomenis, pateiktus per socialinius tinklus (Instagram, Facebook), pagal tų platformų taisykles.</li>
+        </ul>
 
-<h2>4. Teisiniai pagrindai (BDAR 6 str.)</h2>
-<ul>
-  <li>jūsų sutikimas (kai patys pateikiate duomenis);</li>
-  <li>sutarties sudarymas ar vykdymas;</li>
-  <li>teisėtas interesas (svetainės saugumas, apsauga nuo piktnaudžiavimo);</li>
-  <li>teisinė prievolė (jei taikoma pagal įstatymus).</li>
-</ul>
+        <h2>3. Duomenų tvarkymo tikslai</h2>
+        <ul>
+          <li>atsakyti į užklausas ir bendrauti su klientais;</li>
+          <li>susitarti dėl plaukimo pamokų;</li>
+          <li>užtikrinti svetainės saugumą ir techninį veikimą;</li>
+          <li>spręsti galimus teisinius ginčus.</li>
+        </ul>
 
-<h2>5. Duomenų saugojimo terminai</h2>
-<ul>
-  <li>užklausų ir susirašinėjimo duomenys saugomi tiek, kiek reikia paslaugoms suteikti;</li>
-  <li>apskaitos dokumentai – pagal teisės aktų reikalavimus;</li>
-  <li>techniniai serverio žurnalai – ribotą laiką saugumo tikslais.</li>
-</ul>
+        <h2>4. Teisiniai pagrindai (BDAR 6 str.)</h2>
+        <ul>
+          <li>jūsų sutikimas (kai patys pateikiate duomenis);</li>
+          <li>sutarties sudarymas ar vykdymas;</li>
+          <li>teisėtas interesas (svetainės saugumas, apsauga nuo piktnaudžiavimo);</li>
+          <li>teisinė prievolė (jei taikoma pagal įstatymus).</li>
+        </ul>
 
-<h2>6. Duomenų gavėjai</h2>
-<p>
-Asmens duomenys gali būti tvarkomi techninių paslaugų teikėjų (pvz., hostingas, el. paštas),
-tik tiek, kiek būtina paslaugoms teikti. Duomenys neparduodami ir neperduodami tretiesiems
-asmenims, išskyrus atvejus, kai to reikalauja įstatymai.
-</p>
+        <h2>5. Duomenų saugojimo terminai</h2>
+        <ul>
+          <li>užklausų ir susirašinėjimo duomenys saugomi tiek, kiek reikia paslaugoms suteikti;</li>
+          <li>apskaitos dokumentai – pagal teisės aktų reikalavimus;</li>
+          <li>techniniai serverio žurnalai – ribotą laiką saugumo tikslais.</li>
+        </ul>
 
-<h2>7. Slapukai (cookies)</h2>
-<p>
-Svetainė naudoja tik būtinus techninius slapukus, reikalingus jos veikimui.
-Analitiniai ar reklaminiai slapukai nenaudojami.
-</p>
+        <h2>6. Duomenų gavėjai</h2>
+        <p>
+          Asmens duomenys gali būti tvarkomi techninių paslaugų teikėjų (pvz., hostingas, el. paštas),
+          tik tiek, kiek būtina paslaugoms teikti. Duomenys neparduodami ir neperduodami tretiesiems
+          asmenims, išskyrus atvejus, kai to reikalauja įstatymai.
+        </p>
 
-<h2>8. Jūsų teisės</h2>
-<ul>
-  <li>teisė susipažinti su savo duomenimis;</li>
-  <li>teisė reikalauti juos ištaisyti ar ištrinti;</li>
-  <li>teisė apriboti ar nesutikti su tvarkymu;</li>
-  <li>teisė bet kada atšaukti sutikimą.</li>
-</ul>
+        <h2>7. Slapukai (cookies)</h2>
+        <p>
+          Svetainė naudoja tik būtinus techninius slapukus, reikalingus jos veikimui.
+          Analitiniai ar reklaminiai slapukai nenaudojami.
+        </p>
 
-<h2>9. Skundų teikimas</h2>
-<p>
-Jei manote, kad jūsų teisės buvo pažeistos, galite pateikti skundą
-<b>Valstybinei duomenų apsaugos inspekcijai (VDAI)</b>.
-</p>
+        <h2>8. Jūsų teisės</h2>
+        <ul>
+          <li>teisė susipažinti su savo duomenimis;</li>
+          <li>teisė reikalauti juos ištaisyti ar ištrinti;</li>
+          <li>teisė apriboti ar nesutikti su tvarkymu;</li>
+          <li>teisė bet kada atšaukti sutikimą.</li>
+        </ul>
 
-<hr>
-<p>
-📧 <b>Kontaktai privatumo klausimais:</b> info@mokymasplaukti.lt<br>
-📞 +370 611 62333
-</p>
+        <h2>9. Skundų teikimas</h2>
+        <p>
+          Jei manote, kad jūsų teisės buvo pažeistos, galite pateikti skundą
+          <b>Valstybinei duomenų apsaugos inspekcijai (VDAI)</b>.
+        </p>
 
+        <div class="note">
+          Kontaktai privatumo klausimais:
+          <a href="mailto:info@mokymasplaukti.lt">info@mokymasplaukti.lt</a> •
+          Tel. <a href="tel:+37061162333">+370 611 62333</a>
+        </div>
+      </div>
+    </main>
+
+    <div class="footer">
+      <div>© <span id="year"></span> Mokymas plaukti</div>
+      <div>
+        <a href="/">Home</a> •
+        <a href="/privacy-lt.html">Privatumo politika</a>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
